@@ -1,0 +1,20 @@
+abraham:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mas
+    username: mas
+    password: mas123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa-hibernate:
+    generate-ddl: true
+    show-sql: true
+    packages-to-scan: 
+      - abraham.core.web.security.domain
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore/ks_test
+    trust-store: classpath:keystore/ks_test
+    client-auth: need
+    key-store-password: 123456
+    trust-store-password: 123456
+    key-password: 123456
