@@ -2,10 +2,7 @@ package abraham.web.restcontroller.keymanager;
 
 import abraham.core.ca.domain.PrivateKeyInfo;
 import abraham.core.ca.service.PrivateKeyService;
-import abraham.web.restcontroller.security.common.beans.DTQueryColumn;
-import abraham.web.restcontroller.security.common.beans.DTQueryOrder;
-import abraham.web.restcontroller.security.common.beans.DTQueryPagination;
-import abraham.web.restcontroller.security.common.beans.DTQueryResultPagination;
+import pan.utils.web.datatables.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,18 +28,11 @@ public class KeyManagerRestController {
             method= RequestMethod.POST,
             consumes=MediaTypes.JSON_UTF_8, produces=MediaTypes.JSON_UTF_8)
     public DTQueryResultPagination<PrivateKeyInfo> listPrivateKeys(@RequestBody DTQueryPagination dtQuery){
-        int pageNum = (dtQuery.getStart() / dtQuery.getLength());
-        List<Order> orders = new ArrayList<Order>();
-        for (DTQueryOrder dqo: dtQuery.getOrder()){
-            DTQueryColumn dqColumn = dtQuery.getColumns().get(dqo.getColumn());
-            orders.add(new Order(dqo.getDir(), dqColumn.getData()));
-        }
+        DataTablesUtils<PrivateKeyInfo> dtUtils = new DataTablesUtils<PrivateKeyInfo>();
+        int pageNum = dtUtils.calcPageNumber(dtQuery);
+        List<Order> orders = dtUtils.getOrders(dtQuery);
         Page<PrivateKeyInfo>  pkInfos = privateKeyService.findAllPrivateKeyInfo(pageNum, dtQuery.getLength(), orders);
-        DTQueryResultPagination<PrivateKeyInfo> queryResult = new DTQueryResultPagination<PrivateKeyInfo>();
-        queryResult.setData(pkInfos.getContent());
-        queryResult.setDraw(dtQuery.getDraw());
-        queryResult.setRecordsTotal(pkInfos.getTotalElements());
-        queryResult.setRecordsFiltered(pkInfos.getTotalElements());
+        DTQueryResultPagination<PrivateKeyInfo> queryResult = dtUtils.convertDataTablesQueryResult(dtQuery.getDraw(), pkInfos);
         return queryResult;
     }
 }

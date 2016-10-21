@@ -53,7 +53,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="btn-group">
-                                            <button id="sample_editable_1_new" class="btn green"> Add New
+                                            <button id="privatekey_new" class="btn green" data-toggle="modal" href="#modal_adding_privatekey">生成密钥
                                                 <i class="fa fa-plus"></i>
                                             </button>
                                         </div>
@@ -139,10 +139,63 @@
         </div>
     </div>
 
+<!-- BEGIN Modal for adding private key -->
+<div id="modal_adding_privatekey" class="modal fade" tabindex="-1" data-width="700">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">生成密钥对</h4>
+    </div>
+    <div class="modal-body">
+        <form id="addPrivateKeyForm" data-ajax="true" method="post" class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">内部名称</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" name="keyName"
+                               value="${privateKey.keyName}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">密钥类型</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" name="keyType" value="${privateKey.keyType}">
+                            <option value="RSA">RSA</option>
+                            <option value="DSA">DSA</option>
+                            <option value="EC">EC</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">密钥长度</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" name="keySize" value="${privateKey.keySize}">
+                            <option value="1024">1024</option>
+                            <option value="2048">2048</option>
+                            <option value="4096">4096</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-outline dark">关闭</button>
+        <button type="button" class="btn green" onclick="addPrivateKey();">生成</button>
+    </div>
 </div>
+<!-- END Modal for adding private key -->
+
+
 <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
 <script src="/assets/pages/scripts/keymanager/keymanager-datatables.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function addPrivateKey(){
+        var formObj = $("form#addPrivateKeyForm").serializeJSON();
+        alert(formObj);
+    }
+</script>
 
 
 

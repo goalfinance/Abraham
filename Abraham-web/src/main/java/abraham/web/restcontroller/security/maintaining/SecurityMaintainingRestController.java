@@ -21,10 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import abraham.core.web.security.domain.SecurityUser;
 import abraham.core.web.security.service.WebSecurityService;
-import abraham.web.restcontroller.security.common.beans.DTQueryColumn;
-import abraham.web.restcontroller.security.common.beans.DTQueryOrder;
-import abraham.web.restcontroller.security.common.beans.DTQueryPagination;
-import abraham.web.restcontroller.security.common.beans.DTQueryResultPagination;
+import pan.utils.web.datatables.*;
 import abraham.web.restcontroller.security.maintaining.beans.ChangePasswordBean;
 import pan.utils.AppBizException;
 import pan.utils.data.Order;
@@ -74,18 +71,11 @@ public class SecurityMaintainingRestController {
 
 	@RequestMapping(value = "user/list", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8, produces = MediaTypes.JSON_UTF_8)
 	public DTQueryResultPagination<SecurityUser> list(@RequestBody DTQueryPagination dtQuery) {
-		int pageNum = (dtQuery.getStart() / dtQuery.getLength());
-		List<Order> orders = new ArrayList<Order>();
-		for (DTQueryOrder dqo: dtQuery.getOrder()){
-			DTQueryColumn dqColumn = dtQuery.getColumns().get(dqo.getColumn());
-			orders.add(new Order(dqo.getDir(), dqColumn.getData()));
-		}
+		DataTablesUtils<SecurityUser> dtUtils = new DataTablesUtils<SecurityUser>();
+		int pageNum = dtUtils.calcPageNumber(dtQuery);
+		List<Order> orders = dtUtils.getOrders(dtQuery);
 		Page<SecurityUser> sus = webSecurityService.findSecurityUserByUserId(null, pageNum, dtQuery.getLength(), orders);
-		DTQueryResultPagination<SecurityUser> queryResult = new DTQueryResultPagination<SecurityUser>();
-		queryResult.setData(sus.getContent());
-		queryResult.setDraw(dtQuery.getDraw());
-		queryResult.setRecordsTotal(sus.getTotalElements());
-		queryResult.setRecordsFiltered(sus.getTotalElements());
+		DTQueryResultPagination<SecurityUser> queryResult = dtUtils.convertDataTablesQueryResult(dtQuery.getDraw(), sus);
 		return queryResult;
 	}
 }

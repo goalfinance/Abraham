@@ -1,4 +1,4 @@
-package abraham.web.restcontroller.security.common.beans;
+package pan.utils.web.datatables;
 
 import java.util.List;
 
@@ -36,17 +36,17 @@ public class DTQueryPagination {
 	private int length;
 
 	/**
-	 * @see Search
+	 * @see
 	 */
 	private DTQuerySearch search;
 
 	/**
-	 * @see Order
+	 * @see
 	 */
 	private List<DTQueryOrder> order;
 
 	/**
-	 * @see Column
+	 * @see
 	 */
 	private List<DTQueryColumn> columns;
 

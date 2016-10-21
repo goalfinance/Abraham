@@ -1,7 +1,7 @@
 /**
  * 
  */
-package abraham.web.restcontroller.security.common.beans;
+package pan.utils.web.datatables;
 
 import lombok.Data;
 
