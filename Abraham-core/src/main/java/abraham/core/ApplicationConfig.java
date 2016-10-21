@@ -13,6 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -20,8 +22,11 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import abraham.core.settings.JPASettings4Hibernate;
+import org.springframework.validation.beanvalidation.BeanValidationPostProcessor;
+import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
 import pan.utils.annotation.env.Development;
 import pan.utils.annotation.env.Production;
+import pan.utils.annotation.env.UnitTestEnv;
 
 /**
  * @author panqingrong
@@ -30,7 +35,7 @@ import pan.utils.annotation.env.Production;
 @Configuration
 @EnableJpaRepositories
 @EnableTransactionManagement
-@ComponentScan(basePackages = { "abraham.core.settings", "abraham.core.web.security.service" })
+@ComponentScan(basePackages = { "abraham.core.settings", "abraham.core.web.security.service", "abraham.core.ca.service" })
 public class ApplicationConfig {
 	@Autowired
 	private JPASettings4Hibernate jpaSettings4Hibernate;
@@ -66,4 +71,10 @@ public class ApplicationConfig {
 		txManager.setEntityManagerFactory(emf);
 		return txManager;
 	}
+
+	@Bean
+	public MethodValidationPostProcessor MethodValidationPostProcessor(){
+		return new MethodValidationPostProcessor();
+	}
+
 }

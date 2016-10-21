@@ -94,15 +94,8 @@ public class WebSecurityServiceImpl implements WebSecurityService {
 		if (userId == null) {
 			userId = "";
 		}
-		PageRequest pageRequest = new PageRequest(pageNumber, pageSize);
-		if (orders != null && false == orders.isEmpty()) {
-			List<org.springframework.data.domain.Sort.Order> os = new ArrayList<org.springframework.data.domain.Sort.Order>();
-			for (Order order : orders) {
-				Direction dir = order.getDir().equals(Order.DESC) ? Direction.DESC : Direction.ASC;
-				os.add(new org.springframework.data.domain.Sort.Order(dir, order.getColumn()));
-			}
-			pageRequest = new PageRequest(pageNumber, pageSize, new Sort(os));
-		}
+		PageRequest pageRequest = new PageRequest(pageNumber, pageSize, Order.newSort(orders));
+
 		return securityUserRepository.findByUserIdLike(userId, pageRequest);
 	}
 

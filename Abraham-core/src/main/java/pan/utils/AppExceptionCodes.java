@@ -33,4 +33,9 @@ public class AppExceptionCodes {
 	 */
 	public static final String[] SEC_NOT_MATCH_OLDPASSWORD = {"R.MAS.OUTPOST-WEB-SEC.0003", "The old password input is not matched."};
 
+	/**
+	 * The private key is exist in system.
+	 */
+	public static final String[] CA_PRIVATEKEY_NAME_EXIST = {"R.CA.PRIVATEKEY-MANAGER.001", "The private key[key name={0}] is exist in system."};
+
 }

@@ -31,35 +31,99 @@
 </h3>
 <div class="portlet light bordered">
     <div class="portlet-body">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <ul class="nav nav-tabs tabs-left">
-                    <li class="active">
-                        <a href="#tab_6_1" data-toggle="tab"> Private Keys </a>
-                    </li>
-                    <li>
-                        <a href="#tab_6_2" data-toggle="tab"> Cert Signing Req </a>
-                    </li>
-                    <li>
-                        <a href="#tab_6_1" data-toggle="tab"> Certificates </a>
-                    </li>
-                    <li>
-                        <a href="#tab_6_1" data-toggle="tab"> More </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-9 col-sm-9 col-xs-9">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tab_6_1">
-                        <p> Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
-                            butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
-                            voluptate nisi qui. </p>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#tab_private_key" data-toggle="tab"> Private Keys </a>
+            </li>
+            <li>
+                <a href="#tab_6_2" data-toggle="tab"> Cert Signing Req </a>
+            </li>
+            <li>
+                <a href="#tab_6_3" data-toggle="tab"> Certificates </a>
+            </li>
+            <li>
+                <a href="#tab_6_4" data-toggle="tab"> More </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+                    <div class="tab-pane active in" id="tab_private_key">
+                        <div class="portlet-body">
+                            <div class="table-toolbar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="btn-group">
+                                            <button id="sample_editable_1_new" class="btn green"> Add New
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="btn-group pull-right">
+                                            <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a href="javascript:;"> Print </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;"> Save as PDF </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;"> Export to Excel </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover table-bordered" id="private_keys_table">
+                            <thead>
+                            <tr>
+                                <th> 内部名称 </th>
+                                <th> 密钥类型 </th>
+                                <th> 密钥长度 </th>
+                                <th> use </th>
+                                <th> password </th>
+                                <th> Delete </th>
+                            </tr>
+                            </thead>
+                        </table>
                     </div>
                     <div class="tab-pane fade" id="tab_6_2">
-                        <p> Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
-                            craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
-                            Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel.
-                            Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park. </p>
+                        <div class="portlet-body">
+                            <div class="table-toolbar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="btn-group">
+                                            <button id="sample_editable_1_new" class="btn green"> Add New
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="btn-group pull-right">
+                                            <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a href="javascript:;"> Print </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;"> Save as PDF </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;"> Export to Excel </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="tab_6_3">
                         <p> Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
@@ -72,8 +136,13 @@
                             thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan. </p>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
 </div>
+<script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/keymanager/keymanager-datatables.js" type="text/javascript"></script>
+
+
+

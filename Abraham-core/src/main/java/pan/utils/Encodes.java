@@ -37,6 +37,28 @@ public class Encodes {
 	}
 
 	/**
+	 * The format of string for display is like "0F:AB:...:7F", multiply lines, and 16 bytes each line.
+	 * @param hexStringWithoutFormat
+	 * @return
+	 */
+	public static String hexString2Display(String hexStringWithoutFormat){
+		char[] hexCharArray = hexStringWithoutFormat.toCharArray();
+		StringBuffer hexString2Dispay = new StringBuffer();
+		int idx = 0;
+		for (int i = 1; i <= hexCharArray.length / 2; i++){
+			hexString2Dispay.append(hexCharArray, idx, 2);
+			idx += 2;
+			if (i % 16 == 0){
+				hexString2Dispay.append("\n");
+			}else if (idx < hexCharArray.length){
+				hexString2Dispay.append(':');
+			}
+		}
+
+		return hexString2Dispay.toString();
+	}
+
+	/**
 	 * Hex解码.
 	 * @throws DecoderException 
 	 */

@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Profile;
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-@Profile("dev")
+@Profile(Profiles.DEVELOPMENT)
 public @interface Development {
 
 }
