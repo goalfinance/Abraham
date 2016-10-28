@@ -1,8 +1,8 @@
 package abraham.core.ca.service;
 
 import lombok.Data;
-import pan.utils.ca.PrivateKeySizeEnum;
-import pan.utils.ca.PrivateKeyTypeEnum;
+import pan.utils.ca.KeyPairSizeEnum;
+import pan.utils.ca.KeyPairTypeEnum;
 
 import javax.validation.constraints.NotNull;
 
@@ -10,15 +10,15 @@ import javax.validation.constraints.NotNull;
  * Created by panqingrong on 04/10/2016.
  */
 @Data
-public class VOPrivateKey {
+public class VOKeyPair {
     @NotNull(message = "Key name is null!")
     private String keyName;
 
     @NotNull(message = "Key type is null!")
-    private PrivateKeyTypeEnum keyType;
+    private KeyPairTypeEnum keyType;
 
     @NotNull(message = "Key size is null!")
-    private PrivateKeySizeEnum keySize;
+    private KeyPairSizeEnum keySize;
 
     private String keyPassword;
 }

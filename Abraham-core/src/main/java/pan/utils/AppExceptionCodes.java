@@ -36,6 +36,6 @@ public class AppExceptionCodes {
 	/**
 	 * The private key is exist in system.
 	 */
-	public static final String[] CA_PRIVATEKEY_NAME_EXIST = {"R.CA.PRIVATEKEY-MANAGER.001", "The private key[key name={0}] is exist in system."};
+	public static final String[] CA_KEYPAIR_NAME_EXIST = {"R.CA.KEYPAIR-MANAGER.001", "The key pair[key name={0}] is exist in system."};
 
 }

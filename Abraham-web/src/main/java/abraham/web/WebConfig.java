@@ -59,7 +59,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		super.addResourceHandlers(registry);
 		registry.addResourceHandler("/static/metronic/**").addResourceLocations("/presence/metronic/");
 		registry.addResourceHandler("/assets/**").addResourceLocations("/presence/metronic/");
-		registry.addResourceHandler("/data/assets/**").addResourceLocations("/presence/metronic/");
+		registry.addResourceHandler("../assets/**").addResourceLocations("/presence/metronic/");
 	}
 
 	// private class WebCustomizer implements EmbeddedServletContainerCustomizer

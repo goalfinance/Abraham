@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
  * Created by panqingrong on 04/10/2016.
  */
 @Data
-public class VOPrivateKeyRSA extends VOPrivateKey {
+public class VOKeyPairRSA extends VOKeyPair {
     @NotNull(message = "public key's exponent is null!")
     private String publicExponent;
 

@@ -1,9 +1,8 @@
 package abraham.core.ca.service.test;
 
 import abraham.core.ApplicationConfig;
-import abraham.core.ca.service.PrivateKeyService;
-import abraham.core.ca.service.VOPrivateKey;
-import abraham.core.ca.service.VOPrivateKeyRSA;
+import abraham.core.ca.service.KeyPairService;
+import abraham.core.ca.service.VOKeyPairRSA;
 import abraham.core.test.TestingConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,8 +13,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import pan.utils.AppBizException;
 import pan.utils.annotation.env.Profiles;
 
-import javax.validation.ConstraintViolationException;
-
 /**
  * Created by panqingrong on 04/10/2016.
  */
@@ -24,14 +21,14 @@ import javax.validation.ConstraintViolationException;
 @ActiveProfiles(Profiles.UNIT_TEST_ENV)
 public class PrivateKeyServiceTest {
     @Autowired
-    private PrivateKeyService privateKeyService;
+    private KeyPairService privateKeyService;
 
     @Test(expected = IllegalArgumentException.class)
     public void testSavePrivateKey() throws AppBizException{
-        VOPrivateKeyRSA voPrivateKeyRSA = new VOPrivateKeyRSA();
+        VOKeyPairRSA voPrivateKeyRSA = new VOKeyPairRSA();
         voPrivateKeyRSA.setKeyName(null);
 
-        privateKeyService.savePrivateKeyRSA(voPrivateKeyRSA);
+        privateKeyService.saveKeyPairRSA(voPrivateKeyRSA);
 
 
 

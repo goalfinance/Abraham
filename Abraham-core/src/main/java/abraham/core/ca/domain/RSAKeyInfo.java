@@ -27,15 +27,15 @@ public class RSAKeyInfo {
     @Column(name="key_password", insertable = false, updatable = false)
     private String password;
 
-    @Column(name="pkei_public_exponent", insertable = false, updatable = false)
+    @Column(name="kpei_public_exponent", insertable = false, updatable = false)
     private String publicKeyExponent;
 
-    @Column(name="pkei_public_modulus", insertable = false, updatable = false)
+    @Column(name="kpei_public_modulus", insertable = false, updatable = false)
     private String publicKeyModulus;
 
-    @Column(name="pkei_private_exponent", insertable = false, updatable = false)
+    @Column(name="kpei_private_exponent", insertable = false, updatable = false)
     private String privateKeyExponent;
 
-    @Column(name="pkei_private_modulus", insertable = false, updatable = false)
+    @Column(name="kpei_private_modulus", insertable = false, updatable = false)
     private String privateKeyModulus;
 }
