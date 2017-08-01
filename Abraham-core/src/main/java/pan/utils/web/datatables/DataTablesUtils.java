@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class DataTablesUtils<T> {
 
-    public DTQueryResultPagination<T> convertDataTablesQueryResult(Integer reqDraw, Page<T> pagedResult){
+    public DTQueryResultPagination<T> convertDataTablesQueryResult(Integer reqDraw, Page<T> pagedResult) {
         DTQueryResultPagination<T> queryResult = new DTQueryResultPagination<T>();
         queryResult.setData(pagedResult.getContent());
         queryResult.setDraw(reqDraw);
@@ -21,13 +21,13 @@ public class DataTablesUtils<T> {
         return queryResult;
     }
 
-    public int calcPageNumber(DTQueryPagination dtQuery){
+    public int calcPageNumber(DTQueryPagination dtQuery) {
         return (dtQuery.getStart() / dtQuery.getLength());
     }
 
-    public List<Order> getOrders(DTQueryPagination dtQuery){
+    public List<Order> getOrders(DTQueryPagination dtQuery) {
         List<Order> orders = new ArrayList<Order>();
-        for (DTQueryOrder dqo: dtQuery.getOrder()){
+        for (DTQueryOrder dqo : dtQuery.getOrder()) {
             DTQueryColumn dqColumn = dtQuery.getColumns().get(dqo.getColumn());
             orders.add(new Order(dqo.getDir(), dqColumn.getData()));
         }

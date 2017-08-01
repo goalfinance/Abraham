@@ -17,7 +17,8 @@
         </li>
     </ul>
     <div class="page-toolbar">
-        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body"
+             data-placement="bottom" data-original-title="Change dashboard date range">
             <i class="icon-calendar"></i>&nbsp;
             <span class="thin uppercase hidden-xs"></span>&nbsp;
             <i class="fa fa-angle-down"></i>
@@ -47,96 +48,106 @@
         </ul>
 
         <div class="tab-content">
-                    <div class="tab-pane active in" id="tab_keypair">
-                        <div class="table-toolbar">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="btn-group">
-                                        <button id="keypair_new" class="btn green" data-toggle="modal" href="#modal_adding_keypair">生成密钥对
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="btn-group pull-right">
-                                        <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
-                                            <i class="fa fa-angle-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu pull-right">
-                                            <li>
-                                                <a href="javascript:;"> Print </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;"> Save as PDF </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;"> Export to Excel </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+            <div class="tab-pane active in" id="tab_keypair">
+                <div class="table-toolbar">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="btn-group">
+                                <button id="keypair_new" class="btn green" data-toggle="modal"
+                                        href="#modal_adding_keypair">生成密钥对
+                                    <i class="fa fa-plus"></i>
+                                </button>
                             </div>
                         </div>
-                        <table class="table table-striped table-hover table-bordered table-hover table-checkable order-column" id="keypairs_table">
-                            <thead>
-                            <tr>
-                                <th> 内部名称 </th>
-                                <th> 密钥类型 </th>
-                                <th> 密钥长度 </th>
-                                <th> 使用计数 </th>
-                                <th> 密码 </th>
-                                <th> 查看</th>
-                                <th> 删除</th>
-                            </tr>
-                            </thead>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade" id="tab_6_2">
-                        <div class="portlet-body">
-                            <div class="table-toolbar">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="btn-group">
-                                            <button id="sample_editable_1_new" class="btn green"> Add New
-                                                <i class="fa fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="btn-group pull-right">
-                                            <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
-                                                <i class="fa fa-angle-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right">
-                                                <li>
-                                                    <a href="javascript:;"> Print </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;"> Save as PDF </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:;"> Export to Excel </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="btn-group pull-right">
+                                <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li>
+                                        <a href="javascript:;"> Print </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"> Save as PDF </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"> Export to Excel </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab_6_3">
-                        <p> Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
-                            skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork
-                            biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr. </p>
-                    </div>
-                    <div class="tab-pane fade" id="tab_6_4">
-                        <p> Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
-                            locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade
-                            thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan. </p>
                     </div>
                 </div>
+                <table class="table table-striped table-hover table-bordered table-hover table-checkable order-column"
+                       id="keypairs_table">
+                    <thead>
+                    <tr>
+                        <th> 内部名称</th>
+                        <th> 密钥类型</th>
+                        <th> 密钥长度</th>
+                        <th> 使用计数</th>
+                        <th> 密码</th>
+                        <th> 查看</th>
+                        <th> 删除</th>
+                        <th> 导出</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="tab_6_2">
+                <div class="portlet-body">
+                    <div class="table-toolbar">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="btn-group">
+                                    <button id="sample_editable_1_new" class="btn green"> Add New
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn-group pull-right">
+                                    <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="javascript:;"> Print </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"> Save as PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"> Export to Excel </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab_6_3">
+                <p> Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                    retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft
+                    beer, iphone
+                    skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
+                    gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork
+                    biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them,
+                    vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr. </p>
+            </div>
+            <div class="tab-pane fade" id="tab_6_4">
+                <p> Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                    cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
+                    locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
+                    they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade
+                    thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park
+                    vegan. </p>
+            </div>
         </div>
     </div>
+</div>
 
 <!-- BEGIN Modal for adding key pair -->
 <div id="modal_adding_keypair" class="modal fade" tabindex="-1" data-width="700">
@@ -154,7 +165,7 @@
                     <label class="col-sm-3 control-label">内部名称</label>
                     <div class="col-sm-4">
                         <input type="text" class="form-control" name="name"
-                               value="${keypPair.name}" />
+                               value="${keypPair.name}"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -197,6 +208,15 @@
 </div>
 
 <div id="modal_delete_keypair_confirm" class="modal fade" tabindex="-1">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
+            <span> &nbsp;&nbsp;Loading... </span>
+        </div>
+    </div>
+</div>
+
+<div id="modal_export_key" class="modal fade" tabindex="-1">
     <div class="modal-content">
         <div class="modal-body">
             <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">

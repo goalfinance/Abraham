@@ -11,6 +11,7 @@ import java.util.Set;
  */
 public class BeanValidator {
     private static Validator validator;
+
     static {
         LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
         localValidatorFactoryBean.afterPropertiesSet();
@@ -20,7 +21,7 @@ public class BeanValidator {
     public static void validate(Object object) {
         Set constraintViolations = validator.validate(object);
         if (constraintViolations.isEmpty() == false) {
-            throw new IllegalArgumentException("Bean validating didn't pass",
+            throw new IllegalArgumentException("Bean validating can't be passed!",
                     new ConstraintViolationException(constraintViolations));
         }
     }

@@ -28,33 +28,36 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Abraham项目 | 用户登录</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css"/>
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet"
+          type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL STYLES -->
-    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css"/>
+    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css"/>
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="../assets/pages/css/login-5.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/pages/css/login-5.min.css" rel="stylesheet" type="text/css"/>
     <!-- END PAGE LEVEL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
     <!-- END THEME LAYOUT STYLES -->
-    <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
 <!-- END HEAD -->
 
 <body class=" login">
@@ -63,7 +66,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="row bs-reset">
         <div class="col-md-6 bs-reset">
             <div class="login-bg" style="background-image:url(../assets/pages/img/login/bg1.jpg)">
-                <img class="login-logo" src="../assets/pages/img/login/logo.png" /> </div>
+                <img class="login-logo" src="../assets/pages/img/login/logo.png"/></div>
         </div>
         <div class="col-md-6 login-container bs-reset">
             <div class="login-content">
@@ -76,15 +79,17 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="用户名" name="username" required/> </div>
+                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="text"
+                                   autocomplete="off" placeholder="用户名" name="username" required/></div>
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="密码" name="password" required/> </div>
+                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="password"
+                                   autocomplete="off" placeholder="密码" name="password" required/></div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="rem-password">
                                 <label class="rememberme mt-checkbox mt-checkbox-outline">
-                                    <input type="checkbox" name="remember" value="1" /> 记住我
+                                    <input type="checkbox" name="remember" value="1"/> 记住我
                                     <span></span>
                                 </label>
                             </div>
@@ -102,7 +107,8 @@ License: You must have a valid license purchased only from themeforest(the above
                     <h3 class="font-green">忘记登录密码?</h3>
                     <p> 请在下面输入邮箱地址，以重置您的登录密码. </p>
                     <div class="form-group">
-                        <input class="form-control placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="邮箱地址" name="email" /> </div>
+                        <input class="form-control placeholder-no-fix form-group" type="text" autocomplete="off"
+                               placeholder="邮箱地址" name="email"/></div>
                     <div class="form-actions">
                         <button type="button" id="back-btn" class="btn green btn-outline">返回</button>
                         <button type="submit" class="btn btn-success uppercase pull-right">确认</button>
@@ -134,7 +140,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
 <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
@@ -155,17 +162,17 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
 <!-- END THEME LAYOUT SCRIPTS -->
 <script type="text/javascript">
-    function loginSubmit(){
+    function loginSubmit() {
         var loginFormJson = $('.login-form').serializeJSON();
         $.ajax({
-            type:"POST",
-            url:"/restapis/security/login",
+            type: "POST",
+            url: "/restapis/security/login",
             contentType: "application/json",
-            data:loginFormJson,
-            success:function(result, status){
-                window.location="/data/dashboard/show";
+            data: loginFormJson,
+            success: function (result, status) {
+                window.location = "/data/dashboard/show";
             },
-            error:function(status, error){
+            error: function (status, error) {
                 $('.alert-danger', $('.login-form')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseText);
                 $('.alert-danger', $('.login-form')).show();
             }

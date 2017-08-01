@@ -6,6 +6,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 /**
  * Created by panqingrong on 04/10/2016.
  */
-public interface KeyPairRSAExtInfoRepository extends PagingAndSortingRepository<KeyPairRSAExtInfo, Long>{
+public interface KeyPairRSAExtInfoRepository extends PagingAndSortingRepository<KeyPairRSAExtInfo, Long> {
 
 }

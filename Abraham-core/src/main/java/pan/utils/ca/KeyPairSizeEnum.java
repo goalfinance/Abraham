@@ -7,6 +7,7 @@ public enum KeyPairSizeEnum {
     SIZE_1024(1024), SIZE_2048(2048), SIZE_4096(4096);
 
     private int keySize;
+
     KeyPairSizeEnum(int keySize) {
         this.keySize = keySize;
     }

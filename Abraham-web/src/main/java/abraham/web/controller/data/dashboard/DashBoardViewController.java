@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/data/dashboard")
 public class DashBoardViewController {
     @RequestMapping("show")
-    public String showDashBoard(Model model){
+    public String showDashBoard(Model model) {
         return "data/DashBoard";
     }
 }

@@ -1,9 +1,6 @@
 package pan.utils.ca;
 
-import org.bouncycastle.crypto.generators.DSAKeyPairGenerator;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.generators.RSAKeyPairGenerator;
-import org.bouncycastle.jcajce.provider.asymmetric.RSA;
+import pan.utils.AppRTException;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -18,21 +15,27 @@ public class KeyPairUtils {
     private KeyPairGenerator dsaKeyPairGenerator;
     private KeyPairGenerator ecKeyPairGenerator;
 
-    public KeyPairUtils() throws NoSuchAlgorithmException{
-        rsaKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.RSA.getName(),
-                new org.bouncycastle.jce.provider.BouncyCastleProvider());
-        dsaKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.DSA.getName(),
-                new org.bouncycastle.jce.provider.BouncyCastleProvider());
-        ecKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.EC.getName(),
-                new org.bouncycastle.jce.provider.BouncyCastleProvider());
+    public KeyPairUtils() {
+        try {
+            rsaKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.RSA.getName(),
+                    new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            dsaKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.DSA.getName(),
+                    new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            ecKeyPairGenerator = KeyPairGenerator.getInstance(KeyPairTypeEnum.EC.getName(),
+                    new org.bouncycastle.jce.provider.BouncyCastleProvider());
+
+        } catch (NoSuchAlgorithmException e) {
+            throw new AppRTException(e);
+        }
+
     }
 
-    public KeyPair newRSAKeyPair(int keySize){
+    public KeyPair newRSAKeyPair(int keySize) {
         rsaKeyPairGenerator.initialize(keySize, new SecureRandom());
         return rsaKeyPairGenerator.genKeyPair();
     }
 
-    public KeyPair newDSAKeyPair(int keySize){
+    public KeyPair newDSAKeyPair(int keySize) {
         dsaKeyPairGenerator.initialize(keySize, new SecureRandom());
         return dsaKeyPairGenerator.genKeyPair();
     }

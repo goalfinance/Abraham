@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package abraham.web.restcontroller.security.maintaining.beans;
 
@@ -7,44 +7,43 @@ import java.io.Serializable;
 
 /**
  * @author panqingrong
- *
  */
-public class ChangePasswordBean implements Serializable{
+public class ChangePasswordBean implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 6302933452121026028L;
-	
-	private String oldPassword;
-	
-	private String newPassword;
-	
-	private String confirmNewPassword;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 6302933452121026028L;
 
-	public String getOldPassword() {
-		return oldPassword;
-	}
+    private String oldPassword;
 
-	public void setOldPassword(String oldPassword) {
-		this.oldPassword = oldPassword;
-	}
+    private String newPassword;
 
-	public String getNewPassword() {
-		return newPassword;
-	}
+    private String confirmNewPassword;
 
-	public void setNewPassword(String newPassword) {
-		this.newPassword = newPassword;
-	}
+    public String getOldPassword() {
+        return oldPassword;
+    }
 
-	public String getConfirmNewPassword() {
-		return confirmNewPassword;
-	}
+    public void setOldPassword(String oldPassword) {
+        this.oldPassword = oldPassword;
+    }
 
-	public void setConfirmNewPassword(String confirmNewPassword) {
-		this.confirmNewPassword = confirmNewPassword;
-	}
-	
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
+
+    public String getConfirmNewPassword() {
+        return confirmNewPassword;
+    }
+
+    public void setConfirmNewPassword(String confirmNewPassword) {
+        this.confirmNewPassword = confirmNewPassword;
+    }
+
 
 }

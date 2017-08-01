@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package abraham.web.controller.common;
 
@@ -18,40 +18,39 @@ import java.util.List;
 
 /**
  * @author panqingrong
- *
  */
 @Controller
 @RequestMapping("/common/decorator")
 public class DecoratorViewController {
-	@Autowired
-	private SecurityReceptionService securityReceptionService;
+    @Autowired
+    private SecurityReceptionService securityReceptionService;
 
-	@RequestMapping("default")
-	public String defaultView(){
-		return "common/DefaultDecorator";
-	}
+    @RequestMapping("default")
+    public String defaultView() {
+        return "common/DefaultDecorator";
+    }
 
-	@RequestMapping("app_frame")
-	public String appFrameView(Model model) {
-		List<ResourcesGroup> groups = null;
-		Long userSid = -1L;
-		Subject currentUser = SecurityUtils.getSubject();
-		if (currentUser.isAuthenticated() == true) {
-			ApplicationRealm.ShiroUser shiroUser = (ApplicationRealm.ShiroUser) currentUser.getPrincipals().getPrimaryPrincipal();
-			userSid = Long.valueOf(shiroUser.getUsersid());
+    @RequestMapping("app_frame")
+    public String appFrameView(Model model) {
+        List<ResourcesGroup> groups = null;
+        Long userSid = -1L;
+        Subject currentUser = SecurityUtils.getSubject();
+        if (currentUser.isAuthenticated() == true) {
+            ApplicationRealm.ShiroUser shiroUser = (ApplicationRealm.ShiroUser) currentUser.getPrincipals().getPrimaryPrincipal();
+            userSid = Long.valueOf(shiroUser.getUsersid());
 
-			model.addAttribute("nickname", shiroUser.getNickname());
-			model.addAttribute("userSid", shiroUser.getUsersid());
-		}
-		try {
-			groups = securityReceptionService.getResourceGroup(userSid);
-			for (ResourcesGroup rg : groups) {
-				rg.setResources(securityReceptionService.getSecuredResources(Long.valueOf(rg.getGid())));
-			}
-			model.addAttribute("groups", groups);
-		} catch (AppBizException e) {
+            model.addAttribute("nickname", shiroUser.getNickname());
+            model.addAttribute("userSid", shiroUser.getUsersid());
+        }
+        try {
+            groups = securityReceptionService.getResourceGroup(userSid);
+            for (ResourcesGroup rg : groups) {
+                rg.setResources(securityReceptionService.getSecuredResources(Long.valueOf(rg.getGid())));
+            }
+            model.addAttribute("groups", groups);
+        } catch (AppBizException e) {
 
-		}
-		return "common/AppFrameDecorator";
-	}
+        }
+        return "common/AppFrameDecorator";
+    }
 }

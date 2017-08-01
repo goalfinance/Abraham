@@ -18,7 +18,8 @@
         </li>
     </ul>
     <div class="page-toolbar">
-        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body"
+             data-placement="bottom" data-original-title="Change dashboard date range">
             <i class="icon-calendar"></i>&nbsp;
             <span class="thin uppercase hidden-xs"></span>&nbsp;
             <i class="fa fa-angle-down"></i>
@@ -54,8 +55,8 @@
                                         </span>
                 </div>
                 <div class="status">
-                    <div class="status-title"> progress </div>
-                    <div class="status-number"> 76% </div>
+                    <div class="status-title"> progress</div>
+                    <div class="status-number"> 76%</div>
                 </div>
             </div>
         </div>
@@ -80,8 +81,8 @@
                                         </span>
                 </div>
                 <div class="status">
-                    <div class="status-title"> change </div>
-                    <div class="status-number"> 85% </div>
+                    <div class="status-title"> change</div>
+                    <div class="status-number"> 85%</div>
                 </div>
             </div>
         </div>
@@ -106,8 +107,8 @@
                                         </span>
                 </div>
                 <div class="status">
-                    <div class="status-title"> grow </div>
-                    <div class="status-number"> 45% </div>
+                    <div class="status-title"> grow</div>
+                    <div class="status-number"> 45%</div>
                 </div>
             </div>
         </div>
@@ -132,8 +133,8 @@
                                         </span>
                 </div>
                 <div class="status">
-                    <div class="status-title"> change </div>
-                    <div class="status-number"> 57% </div>
+                    <div class="status-title"> change</div>
+                    <div class="status-number"> 57%</div>
                 </div>
             </div>
         </div>
@@ -209,13 +210,15 @@
                         <div class="mt-comments">
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar1.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar1.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Michael Baker</span>
                                         <span class="mt-comment-date">26 Feb, 10:30AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-pending">Pending</span>
                                         <ul class="mt-comment-actions">
@@ -234,13 +237,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar6.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar6.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Larisa Maskalyova</span>
                                         <span class="mt-comment-date">12 Feb, 08:30AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> It is a long established fact that a reader will be distracted. </div>
+                                    <div class="mt-comment-text"> It is a long established fact that a reader will be
+                                        distracted.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-rejected">Rejected</span>
                                         <ul class="mt-comment-actions">
@@ -259,13 +264,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar8.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Natasha Kim</span>
                                         <span class="mt-comment-date">19 Dec,09:50 AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> The generated Lorem or non-characteristic Ipsum is therefore or non-characteristic. </div>
+                                    <div class="mt-comment-text"> The generated Lorem or non-characteristic Ipsum is
+                                        therefore or non-characteristic.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-pending">Pending</span>
                                         <ul class="mt-comment-actions">
@@ -284,13 +291,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar4.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar4.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Sebastian Davidson</span>
                                         <span class="mt-comment-date">10 Dec, 09:20 AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> The standard chunk of Lorem or non-characteristic Ipsum used since the 1500s or non-characteristic. </div>
+                                    <div class="mt-comment-text"> The standard chunk of Lorem or non-characteristic
+                                        Ipsum used since the 1500s or non-characteristic.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-rejected">Rejected</span>
                                         <ul class="mt-comment-actions">
@@ -315,13 +324,15 @@
                         <div class="mt-comments">
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar4.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar4.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Michael Baker</span>
                                         <span class="mt-comment-date">26 Feb, 10:30AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
+                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-approved">Approved</span>
                                         <ul class="mt-comment-actions">
@@ -340,13 +351,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar8.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Larisa Maskalyova</span>
                                         <span class="mt-comment-date">12 Feb, 08:30AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> It is a long established fact that a reader will be distracted by. </div>
+                                    <div class="mt-comment-text"> It is a long established fact that a reader will be
+                                        distracted by.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-approved">Approved</span>
                                         <ul class="mt-comment-actions">
@@ -365,13 +378,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar6.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar6.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Natasha Kim</span>
                                         <span class="mt-comment-date">19 Dec,09:50 AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </div>
+                                    <div class="mt-comment-text"> The generated Lorem Ipsum is therefore always free
+                                        from repetition, injected humour, or non-characteristic words etc.
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-approved">Approved</span>
                                         <ul class="mt-comment-actions">
@@ -390,13 +405,15 @@
                             </div>
                             <div class="mt-comment">
                                 <div class="mt-comment-img">
-                                    <img src="../assets/pages/media/users/avatar1.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar1.jpg"/></div>
                                 <div class="mt-comment-body">
                                     <div class="mt-comment-info">
                                         <span class="mt-comment-author">Sebastian Davidson</span>
                                         <span class="mt-comment-date">10 Dec, 09:20 AM</span>
                                     </div>
-                                    <div class="mt-comment-text"> The standard chunk of Lorem Ipsum used since the 1500s </div>
+                                    <div class="mt-comment-text"> The standard chunk of Lorem Ipsum used since the
+                                        1500s
+                                    </div>
                                     <div class="mt-comment-details">
                                         <span class="mt-comment-status mt-comment-status-approved">Approved</span>
                                         <ul class="mt-comment-actions">
@@ -443,7 +460,7 @@
                         <div class="mt-actions">
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar10.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar10.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -462,7 +479,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -471,7 +489,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar3.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar3.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -490,7 +508,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -499,7 +518,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar2.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar2.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -518,7 +537,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -527,7 +547,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar7.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar7.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -536,7 +556,8 @@
                                             </div>
                                             <div class="mt-action-details ">
                                                 <span class="mt-action-author">John Clark</span>
-                                                <p class="mt-action-desc">Text of the printing and typesetting industry</p>
+                                                <p class="mt-action-desc">Text of the printing and typesetting
+                                                    industry</p>
                                             </div>
                                         </div>
                                         <div class="mt-action-datetime ">
@@ -546,7 +567,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -555,7 +577,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar8.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -574,7 +596,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -583,7 +606,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar9.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar9.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -602,7 +625,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -617,7 +641,7 @@
                         <div class="mt-actions">
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar1.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar1.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -636,7 +660,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -645,7 +670,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar8.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -654,7 +679,8 @@
                                             </div>
                                             <div class="mt-action-details ">
                                                 <span class="mt-action-author">Ella Davidson </span>
-                                                <p class="mt-action-desc">Text of the printing and typesetting industry</p>
+                                                <p class="mt-action-desc">Text of the printing and typesetting
+                                                    industry</p>
                                             </div>
                                         </div>
                                         <div class="mt-action-datetime ">
@@ -664,7 +690,8 @@
                                         </div>
                                         <div class="mt-action-buttons">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -673,7 +700,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar5.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar5.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -682,7 +709,8 @@
                                             </div>
                                             <div class="mt-action-details ">
                                                 <span class="mt-action-author">Jason Dickens </span>
-                                                <p class="mt-action-desc">Dummy text of the printing and typesetting industry</p>
+                                                <p class="mt-action-desc">Dummy text of the printing and typesetting
+                                                    industry</p>
                                             </div>
                                         </div>
                                         <div class="mt-action-datetime ">
@@ -692,7 +720,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -701,7 +730,7 @@
                             </div>
                             <div class="mt-action">
                                 <div class="mt-action-img">
-                                    <img src="../assets/pages/media/users/avatar2.jpg" /> </div>
+                                    <img src="/assets/pages/media/users/avatar2.jpg"/></div>
                                 <div class="mt-action-body">
                                     <div class="mt-action-row">
                                         <div class="mt-action-info ">
@@ -720,7 +749,8 @@
                                         </div>
                                         <div class="mt-action-buttons ">
                                             <div class="btn-group btn-group-circle">
-                                                <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                <button type="button" class="btn btn-outline green btn-sm">Appove
+                                                </button>
                                                 <button type="button" class="btn btn-outline red btn-sm">Reject</button>
                                             </div>
                                         </div>
@@ -746,14 +776,15 @@
                 </div>
                 <div class="actions">
                     <div class="btn-group">
-                        <a class="btn blue btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
+                        <a class="btn blue btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown"
+                           data-hover="dropdown" data-close-others="true"> Actions
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
                                 <a href="javascript:;"> Action 1</a>
                             </li>
-                            <li class="divider"> </li>
+                            <li class="divider"></li>
                             <li>
                                 <a href="javascript:;">Action 2</a>
                             </li>
@@ -774,37 +805,48 @@
                             <div class="events">
                                 <ol>
                                     <li>
-                                        <a href="#0" data-date="16/01/2014" class="border-after-red bg-after-red selected">16 Jan</a>
+                                        <a href="#0" data-date="16/01/2014"
+                                           class="border-after-red bg-after-red selected">16 Jan</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="28/02/2014" class="border-after-red bg-after-red">28 Feb</a>
+                                        <a href="#0" data-date="28/02/2014" class="border-after-red bg-after-red">28
+                                            Feb</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="20/04/2014" class="border-after-red bg-after-red">20 Mar</a>
+                                        <a href="#0" data-date="20/04/2014" class="border-after-red bg-after-red">20
+                                            Mar</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="20/05/2014" class="border-after-red bg-after-red">20 May</a>
+                                        <a href="#0" data-date="20/05/2014" class="border-after-red bg-after-red">20
+                                            May</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="09/07/2014" class="border-after-red bg-after-red">09 Jul</a>
+                                        <a href="#0" data-date="09/07/2014" class="border-after-red bg-after-red">09
+                                            Jul</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="30/08/2014" class="border-after-red bg-after-red">30 Aug</a>
+                                        <a href="#0" data-date="30/08/2014" class="border-after-red bg-after-red">30
+                                            Aug</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="15/09/2014" class="border-after-red bg-after-red">15 Sep</a>
+                                        <a href="#0" data-date="15/09/2014" class="border-after-red bg-after-red">15
+                                            Sep</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="01/11/2014" class="border-after-red bg-after-red">01 Nov</a>
+                                        <a href="#0" data-date="01/11/2014" class="border-after-red bg-after-red">01
+                                            Nov</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="10/12/2014" class="border-after-red bg-after-red">10 Dec</a>
+                                        <a href="#0" data-date="10/12/2014" class="border-after-red bg-after-red">10
+                                            Dec</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="19/01/2015" class="border-after-red bg-after-red">29 Jan</a>
+                                        <a href="#0" data-date="19/01/2015" class="border-after-red bg-after-red">29
+                                            Jan</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="03/03/2015" class="border-after-red bg-after-red">3 Mar</a>
+                                        <a href="#0" data-date="03/03/2015" class="border-after-red bg-after-red">3
+                                            Mar</a>
                                     </li>
                                 </ol>
                                 <span class="filling-line bg-red" aria-hidden="true"></span>
@@ -835,7 +877,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_3.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_3.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -844,8 +886,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, mi felis, aliquam at iaculis mi felis, aliquam
-                                        at iaculis finibus eu ex. Integer efficitur tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non est rhoncus volutpat.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, mi felis,
+                                        aliquam at iaculis mi felis, aliquam
+                                        at iaculis finibus eu ex. Integer efficitur tincidunt malesuada. Sed sit amet
+                                        molestie elit, vel placerat ipsum. Ut consectetur odio non est rhoncus
+                                        volutpat.</p>
                                     <a href="javascript:;" class="btn btn-circle red btn-outline">Read More</a>
                                     <a href="javascript:;" class="btn btn-circle btn-icon-only blue">
                                         <i class="fa fa-plus"></i>
@@ -861,7 +907,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_3.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_3.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Hugh Grant</a>
@@ -870,13 +916,22 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
-                                    <a href="javascript:;" class="btn btn-circle btn-outline green-jungle">Download Shipment List</a>
+                                    <a href="javascript:;" class="btn btn-circle btn-outline green-jungle">Download
+                                        Shipment List</a>
                                     <div class="btn-group dropup pull-right">
-                                        <button class="btn btn-circle blue-steel dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false"> Actions
+                                        <button class="btn btn-circle blue-steel dropdown-toggle" type="button"
+                                                data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                                aria-expanded="false"> Actions
                                             <i class="fa fa-angle-down"></i>
                                         </button>
                                         <ul class="dropdown-menu pull-right" role="menu">
@@ -889,7 +944,7 @@
                                             <li>
                                                 <a href="javascript:;">Something else here </a>
                                             </li>
-                                            <li class="divider"> </li>
+                                            <li class="divider"></li>
                                             <li>
                                                 <a href="javascript:;">Separated link </a>
                                             </li>
@@ -903,7 +958,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue">Rory Matthew</a>
@@ -912,12 +967,21 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
                                     <a href="javascript:;" class="btn btn-circle red">Read More</a>
                                 </div>
                             </li>
@@ -927,7 +991,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -936,9 +1000,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -949,7 +1019,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Matt Goldman</a>
@@ -958,10 +1028,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde.</p>
-                                    <a href="javascript:;" class="btn btn-circle btn-outline purple-medium">View Summary</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde.</p>
+                                    <a href="javascript:;" class="btn btn-circle btn-outline purple-medium">View
+                                        Summary</a>
                                     <div class="btn-group dropup pull-right">
-                                        <button class="btn btn-circle green dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false"> Actions
+                                        <button class="btn btn-circle green dropdown-toggle" type="button"
+                                                data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                                aria-expanded="false"> Actions
                                             <i class="fa fa-angle-down"></i>
                                         </button>
                                         <ul class="dropdown-menu pull-right" role="menu">
@@ -974,7 +1049,7 @@
                                             <li>
                                                 <a href="javascript:;">Something else here </a>
                                             </li>
-                                            <li class="divider"> </li>
+                                            <li class="divider"></li>
                                             <li>
                                                 <a href="javascript:;">Separated link </a>
                                             </li>
@@ -988,7 +1063,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Rory Matthew</a>
@@ -997,13 +1072,23 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <img class="timeline-body-img pull-left" src="../assets/pages/media/blog/5.jpg" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
+                                    <img class="timeline-body-img pull-left" src="/assets/pages/media/blog/5.jpg"
+                                         alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
                                     <a href="javascript:;" class="btn btn-circle red">Read More</a>
                                 </div>
                             </li>
@@ -1013,7 +1098,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_5.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_5.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Jessica Wolf</a>
@@ -1022,8 +1107,11 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <img class="timeline-body-img pull-right" src="../assets/pages/media/blog/6.jpg" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
+                                    <img class="timeline-body-img pull-right" src="/assets/pages/media/blog/6.jpg"
+                                         alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
                                         qui ut.</p>
                                     <a href="javascript:;" class="btn btn-circle green-sharp">Read More</a>
                                 </div>
@@ -1034,7 +1122,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1043,9 +1131,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1056,7 +1150,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1065,9 +1159,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1078,7 +1178,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1087,9 +1187,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1100,7 +1206,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1109,9 +1215,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1147,10 +1259,12 @@
                             <div class="events">
                                 <ol>
                                     <li>
-                                        <a href="#0" data-date="16/01/2014" class="border-after-blue bg-after-blue selected">Expo 2016</a>
+                                        <a href="#0" data-date="16/01/2014"
+                                           class="border-after-blue bg-after-blue selected">Expo 2016</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="28/02/2014" class="border-after-blue bg-after-blue">New Promo</a>
+                                        <a href="#0" data-date="28/02/2014" class="border-after-blue bg-after-blue">New
+                                            Promo</a>
                                     </li>
                                     <li>
                                         <a href="#0" data-date="20/04/2014" class="border-after-blue bg-after-blue">Meeting</a>
@@ -1165,10 +1279,12 @@
                                         <a href="#0" data-date="30/08/2014" class="border-after-blue bg-after-blue">Reports</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="15/09/2014" class="border-after-blue bg-after-blue">HR</a>
+                                        <a href="#0" data-date="15/09/2014"
+                                           class="border-after-blue bg-after-blue">HR</a>
                                     </li>
                                     <li>
-                                        <a href="#0" data-date="01/11/2014" class="border-after-blue bg-after-blue">IPO</a>
+                                        <a href="#0" data-date="01/11/2014"
+                                           class="border-after-blue bg-after-blue">IPO</a>
                                     </li>
                                     <li>
                                         <a href="#0" data-date="10/12/2014" class="border-after-blue bg-after-blue">Board</a>
@@ -1208,7 +1324,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Lisa Bold</a>
@@ -1217,8 +1333,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod mi felis, aliquam at iaculis eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis mi felis, aliquam at
-                                        iaculis eu, onsectetur adipiscing elit finibus eu ex. Integer efficitur leo eget dolor tincidunt, et dignissim risus lacinia. Nam in egestas onsectetur adipiscing elit nunc. Suspendisse potenti</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod mi felis,
+                                        aliquam at iaculis eleifend ipsum, at posuere augue. Pellentesque mi felis,
+                                        aliquam at iaculis mi felis, aliquam at
+                                        iaculis eu, onsectetur adipiscing elit finibus eu ex. Integer efficitur leo eget
+                                        dolor tincidunt, et dignissim risus lacinia. Nam in egestas onsectetur
+                                        adipiscing elit nunc. Suspendisse potenti</p>
                                     <a href="javascript:;" class="btn btn-circle dark btn-outline">Read More</a>
                                     <a href="javascript:;" class="btn btn-circle btn-icon-only green pull-right">
                                         <i class="fa fa-twitter"></i>
@@ -1231,7 +1351,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_3.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_3.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Hugh Grant</a>
@@ -1240,13 +1360,22 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
-                                    <a href="javascript:;" class="btn btn-circle btn-outline green-jungle">Download Shipment List</a>
+                                    <a href="javascript:;" class="btn btn-circle btn-outline green-jungle">Download
+                                        Shipment List</a>
                                     <div class="btn-group dropup pull-right">
-                                        <button class="btn btn-circle blue-steel dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false"> Actions
+                                        <button class="btn btn-circle blue-steel dropdown-toggle" type="button"
+                                                data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                                aria-expanded="false"> Actions
                                             <i class="fa fa-angle-down"></i>
                                         </button>
                                         <ul class="dropdown-menu pull-right" role="menu">
@@ -1259,7 +1388,7 @@
                                             <li>
                                                 <a href="javascript:;">Something else here </a>
                                             </li>
-                                            <li class="divider"> </li>
+                                            <li class="divider"></li>
                                             <li>
                                                 <a href="javascript:;">Separated link </a>
                                             </li>
@@ -1273,7 +1402,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue">Rory Matthew</a>
@@ -1282,12 +1411,21 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
                                     <a href="javascript:;" class="btn btn-circle red">Read More</a>
                                 </div>
                             </li>
@@ -1297,7 +1435,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1306,9 +1444,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1319,7 +1463,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Matt Goldman</a>
@@ -1328,10 +1472,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde.</p>
-                                    <a href="javascript:;" class="btn btn-circle btn-outline purple-medium">View Summary</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde.</p>
+                                    <a href="javascript:;" class="btn btn-circle btn-outline purple-medium">View
+                                        Summary</a>
                                     <div class="btn-group dropup pull-right">
-                                        <button class="btn btn-circle green dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false"> Actions
+                                        <button class="btn btn-circle green dropdown-toggle" type="button"
+                                                data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                                aria-expanded="false"> Actions
                                             <i class="fa fa-angle-down"></i>
                                         </button>
                                         <ul class="dropdown-menu pull-right" role="menu">
@@ -1344,7 +1493,7 @@
                                             <li>
                                                 <a href="javascript:;">Something else here </a>
                                             </li>
-                                            <li class="divider"> </li>
+                                            <li class="divider"></li>
                                             <li>
                                                 <a href="javascript:;">Separated link </a>
                                             </li>
@@ -1358,7 +1507,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_1.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_1.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Rory Matthew</a>
@@ -1367,13 +1516,23 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <img class="timeline-body-img pull-left" src="../assets/pages/media/blog/5.jpg" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
-                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut. </p>
+                                    <img class="timeline-body-img pull-left" src="/assets/pages/media/blog/5.jpg"
+                                         alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
+                                        qui ut. laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui
+                                        ut. </p>
                                     <a href="javascript:;" class="btn btn-circle red">Read More</a>
                                 </div>
                             </li>
@@ -1383,7 +1542,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_5.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_5.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Jessica Wolf</a>
@@ -1392,8 +1551,11 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <img class="timeline-body-img pull-right" src="../assets/pages/media/blog/6.jpg" alt="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
+                                    <img class="timeline-body-img pull-right" src="/assets/pages/media/blog/6.jpg"
+                                         alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum
+                                        provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis
+                                        unde? Iste voluptatibus minus veritatis
                                         qui ut.</p>
                                     <a href="javascript:;" class="btn btn-circle green-sharp">Read More</a>
                                 </div>
@@ -1404,7 +1566,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1413,9 +1575,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1426,7 +1594,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1435,9 +1603,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1448,7 +1622,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1457,9 +1631,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1470,7 +1650,7 @@
                                 </div>
                                 <div class="mt-author">
                                     <div class="mt-avatar">
-                                        <img src="../assets/pages/media/users/avatar80_2.jpg" />
+                                        <img src="/assets/pages/media/users/avatar80_2.jpg"/>
                                     </div>
                                     <div class="mt-author-name">
                                         <a href="javascript:;" class="font-blue-madison">Andres Iniesta</a>
@@ -1479,9 +1659,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="mt-content border-grey-steel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus eu ex. Integer efficitur leo eget dolor
-                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti. Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat ipsum. Ut consectetur odio non
-                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at condimentum. Praesent dignissim luctus
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eleifend
+                                        ipsum, at posuere augue. Pellentesque mi felis, aliquam at iaculis eu, finibus
+                                        eu ex. Integer efficitur leo eget dolor
+                                        tincidunt, et dignissim risus lacinia. Nam in egestas nunc. Suspendisse potenti.
+                                        Cras ullamcorper tincidunt malesuada. Sed sit amet molestie elit, vel placerat
+                                        ipsum. Ut consectetur odio non
+                                        est rhoncus volutpat. Nullam interdum, neque quis vehicula ornare, lacus elit
+                                        dignissim purus, quis ultrices erat tortor eget felis. Cras commodo id massa at
+                                        condimentum. Praesent dignissim luctus
                                         risus sed sodales.</p>
                                     <a href="javascript:;" class="btn btn-circle green-turquoise">Read More</a>
                                 </div>
@@ -1523,8 +1709,8 @@
                                 <div id="sparkline_bar"></div>
                             </div>
                             <div class="stat-number">
-                                <div class="title"> Total </div>
-                                <div class="number"> 2460 </div>
+                                <div class="title"> Total</div>
+                                <div class="number"> 2460</div>
                             </div>
                         </div>
                     </div>
@@ -1535,8 +1721,8 @@
                                 <div id="sparkline_bar2"></div>
                             </div>
                             <div class="stat-number">
-                                <div class="title"> New </div>
-                                <div class="number"> 719 </div>
+                                <div class="title"> New</div>
+                                <div class="number"> 719</div>
                             </div>
                         </div>
                     </div>
@@ -1545,61 +1731,61 @@
                     <table class="table table-hover table-light">
                         <thead>
                         <tr class="uppercase">
-                            <th colspan="2"> MEMBER </th>
-                            <th> Earnings </th>
-                            <th> CASES </th>
-                            <th> CLOSED </th>
-                            <th> RATE </th>
+                            <th colspan="2"> MEMBER</th>
+                            <th> Earnings</th>
+                            <th> CASES</th>
+                            <th> CLOSED</th>
+                            <th> RATE</th>
                         </tr>
                         </thead>
                         <tr>
                             <td class="fit">
-                                <img class="user-pic rounded" src="../assets/pages/media/users/avatar4.jpg"> </td>
+                                <img class="user-pic rounded" src="/assets/pages/media/users/avatar4.jpg"></td>
                             <td>
                                 <a href="javascript:;" class="primary-link">Brain</a>
                             </td>
-                            <td> $345 </td>
-                            <td> 45 </td>
-                            <td> 124 </td>
+                            <td> $345</td>
+                            <td> 45</td>
+                            <td> 124</td>
                             <td>
                                 <span class="bold theme-font">80%</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="fit">
-                                <img class="user-pic rounded" src="../assets/pages/media/users/avatar5.jpg"> </td>
+                                <img class="user-pic rounded" src="/assets/pages/media/users/avatar5.jpg"></td>
                             <td>
                                 <a href="javascript:;" class="primary-link">Nick</a>
                             </td>
-                            <td> $560 </td>
-                            <td> 12 </td>
-                            <td> 24 </td>
+                            <td> $560</td>
+                            <td> 12</td>
+                            <td> 24</td>
                             <td>
                                 <span class="bold theme-font">67%</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="fit">
-                                <img class="user-pic rounded" src="../assets/pages/media/users/avatar6.jpg"> </td>
+                                <img class="user-pic rounded" src="/assets/pages/media/users/avatar6.jpg"></td>
                             <td>
                                 <a href="javascript:;" class="primary-link">Tim</a>
                             </td>
-                            <td> $1,345 </td>
-                            <td> 450 </td>
-                            <td> 46 </td>
+                            <td> $1,345</td>
+                            <td> 450</td>
+                            <td> 46</td>
                             <td>
                                 <span class="bold theme-font">98%</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="fit">
-                                <img class="user-pic rounded" src="../assets/pages/media/users/avatar7.jpg"> </td>
+                                <img class="user-pic rounded" src="/assets/pages/media/users/avatar7.jpg"></td>
                             <td>
                                 <a href="javascript:;" class="primary-link">Tom</a>
                             </td>
-                            <td> $645 </td>
-                            <td> 50 </td>
-                            <td> 89 </td>
+                            <td> $645</td>
+                            <td> 50</td>
+                            <td> 89</td>
                             <td>
                                 <span class="bold theme-font">58%</span>
                             </td>
@@ -1621,96 +1807,114 @@
                     <div class="portlet-input input-inline input-small ">
                         <div class="input-icon right">
                             <i class="icon-magnifier"></i>
-                            <input type="text" class="form-control form-control-solid input-circle" placeholder="search..."> </div>
+                            <input type="text" class="form-control form-control-solid input-circle"
+                                   placeholder="search..."></div>
                     </div>
                 </div>
             </div>
             <div class="portlet-body">
-                <div class="scroller" style="height: 338px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                <div class="scroller" style="height: 338px;" data-always-visible="1" data-rail-visible1="0"
+                     data-handle-color="#D7DCE2">
                     <div class="general-item-list">
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar4.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar4.jpg">
                                     <a href="" class="item-name primary-link">Nick Larson</a>
                                     <span class="item-label">3 hrs ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-success"></span> Open</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar3.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar3.jpg">
                                     <a href="" class="item-name primary-link">Mark</a>
                                     <span class="item-label">5 hrs ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-warning"></span> Pending</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt
+                                ut laoreet.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar6.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar6.jpg">
                                     <a href="" class="item-name primary-link">Nick Larson</a>
                                     <span class="item-label">8 hrs ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-primary"></span> Closed</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar7.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar7.jpg">
                                     <a href="" class="item-name primary-link">Nick Larson</a>
                                     <span class="item-label">12 hrs ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-danger"></span> Pending</span>
                             </div>
-                            <div class="item-body"> Consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                            <div class="item-body"> Consectetuer adipiscing elit Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar9.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar9.jpg">
                                     <a href="" class="item-name primary-link">Richard Stone</a>
                                     <span class="item-label">2 days ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-danger"></span> Open</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet dolore magna aliquam erat volutpat. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet
+                                dolore magna aliquam erat volutpat.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar8.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar8.jpg">
                                     <a href="" class="item-name primary-link">Dan</a>
                                     <span class="item-label">3 days ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-warning"></span> Pending</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt
+                                ut laoreet dolore magna aliquam erat volutpat.
+                            </div>
                         </div>
                         <div class="item">
                             <div class="item-head">
                                 <div class="item-details">
-                                    <img class="item-pic rounded" src="../assets/pages/media/users/avatar2.jpg">
+                                    <img class="item-pic rounded" src="/assets/pages/media/users/avatar2.jpg">
                                     <a href="" class="item-name primary-link">Larry</a>
                                     <span class="item-label">4 hrs ago</span>
                                 </div>
                                 <span class="item-status">
                                                         <span class="badge badge-empty badge-success"></span> Open</span>
                             </div>
-                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                            <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1736,27 +1940,30 @@
                     <div class="col-md-4">
                         <div class="easy-pie-chart">
                             <div class="number transactions" data-percent="55">
-                                <span>+55</span>% </div>
+                                <span>+55</span>%
+                            </div>
                             <a class="title" href="javascript:;"> Transactions
                                 <i class="icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="margin-bottom-10 visible-sm"> </div>
+                    <div class="margin-bottom-10 visible-sm"></div>
                     <div class="col-md-4">
                         <div class="easy-pie-chart">
                             <div class="number visits" data-percent="85">
-                                <span>+85</span>% </div>
+                                <span>+85</span>%
+                            </div>
                             <a class="title" href="javascript:;"> New Visits
                                 <i class="icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="margin-bottom-10 visible-sm"> </div>
+                    <div class="margin-bottom-10 visible-sm"></div>
                     <div class="col-md-4">
                         <div class="easy-pie-chart">
                             <div class="number bounce" data-percent="46">
-                                <span>-46</span>% </div>
+                                <span>-46</span>%
+                            </div>
                             <a class="title" href="javascript:;"> Bounce
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -1791,7 +1998,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="margin-bottom-10 visible-sm"> </div>
+                    <div class="margin-bottom-10 visible-sm"></div>
                     <div class="col-md-4">
                         <div class="sparkline-chart">
                             <div class="number" id="sparkline_bar6"></div>
@@ -1800,7 +2007,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="margin-bottom-10 visible-sm"> </div>
+                    <div class="margin-bottom-10 visible-sm"></div>
                     <div class="col-md-4">
                         <div class="sparkline-chart">
                             <div class="number" id="sparkline_line"></div>
@@ -1830,7 +2037,8 @@
                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                         <i class="icon-wrench"></i>
                     </a>
-                    <a class="btn btn-circle btn-icon-only btn-default fullscreen" data-container="false" data-placement="bottom" href="javascript:;"> </a>
+                    <a class="btn btn-circle btn-icon-only btn-default fullscreen" data-container="false"
+                       data-placement="bottom" href="javascript:;"> </a>
                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                         <i class="icon-trash"></i>
                     </a>
@@ -1838,7 +2046,7 @@
             </div>
             <div class="portlet-body">
                 <div id="region_statistics_loading">
-                    <img src="../assets/global/img/loading.gif" alt="loading" /> </div>
+                    <img src="/assets/global/img/loading.gif" alt="loading"/></div>
                 <div id="region_statistics_content" class="display-none">
                     <div class="btn-toolbar margin-bottom-10">
                         <div class="btn-group btn-group-circle" data-toggle="buttons">
@@ -1846,7 +2054,8 @@
                             <a href="" class="btn grey-salsa btn-sm"> Orders </a>
                         </div>
                         <div class="btn-group pull-right">
-                            <a href="" class="btn btn-circle grey-salsa btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Select Region
+                            <a href="" class="btn btn-circle grey-salsa btn-sm dropdown-toggle" data-toggle="dropdown"
+                               data-hover="dropdown" data-close-others="true"> Select Region
                                 <span class="fa fa-angle-down"> </span>
                             </a>
                             <ul class="dropdown-menu pull-right">
@@ -1868,11 +2077,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="vmap_world" class="vmaps display-none"> </div>
-                    <div id="vmap_usa" class="vmaps display-none"> </div>
-                    <div id="vmap_europe" class="vmaps display-none"> </div>
-                    <div id="vmap_russia" class="vmaps display-none"> </div>
-                    <div id="vmap_germany" class="vmaps display-none"> </div>
+                    <div id="vmap_world" class="vmaps display-none"></div>
+                    <div id="vmap_usa" class="vmaps display-none"></div>
+                    <div id="vmap_europe" class="vmaps display-none"></div>
+                    <div id="vmap_russia" class="vmaps display-none"></div>
+                    <div id="vmap_germany" class="vmaps display-none"></div>
                 </div>
             </div>
         </div>
@@ -1919,7 +2128,7 @@
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> Just now </div>
+                                        <div class="date"> Just now</div>
                                     </div>
                                 </li>
                                 <li>
@@ -1932,12 +2141,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New version v1.4 just lunched! </div>
+                                                    <div class="desc"> New version v1.4 just lunched!</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> 20 mins </div>
+                                            <div class="date"> 20 mins</div>
                                         </div>
                                     </a>
                                 </li>
@@ -1950,12 +2159,14 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> Database server #12 overloaded. Please fix the issue. </div>
+                                                <div class="desc"> Database server #12 overloaded. Please fix the
+                                                    issue.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 24 mins </div>
+                                        <div class="date"> 24 mins</div>
                                     </div>
                                 </li>
                                 <li>
@@ -1967,12 +2178,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 30 mins </div>
+                                        <div class="date"> 30 mins</div>
                                     </div>
                                 </li>
                                 <li>
@@ -1984,12 +2195,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 40 mins </div>
+                                        <div class="date"> 40 mins</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2001,12 +2212,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New user registered. </div>
+                                                <div class="desc"> New user registered.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 1.5 hours </div>
+                                        <div class="date"> 1.5 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2025,7 +2236,7 @@
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 2 hours </div>
+                                        <div class="date"> 2 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2037,12 +2248,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 3 hours </div>
+                                        <div class="date"> 3 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2054,12 +2265,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 5 hours </div>
+                                        <div class="date"> 5 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2071,12 +2282,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 18 hours </div>
+                                        <div class="date"> 18 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2088,12 +2299,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 21 hours </div>
+                                        <div class="date"> 21 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2105,12 +2316,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 22 hours </div>
+                                        <div class="date"> 22 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2122,12 +2333,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 21 hours </div>
+                                        <div class="date"> 21 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2139,12 +2350,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 22 hours </div>
+                                        <div class="date"> 22 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2156,12 +2367,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 21 hours </div>
+                                        <div class="date"> 21 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2173,12 +2384,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 22 hours </div>
+                                        <div class="date"> 22 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2190,12 +2401,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 21 hours </div>
+                                        <div class="date"> 21 hours</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2207,12 +2418,12 @@
                                                 </div>
                                             </div>
                                             <div class="cont-col2">
-                                                <div class="desc"> New order received. Please take care of it. </div>
+                                                <div class="desc"> New order received. Please take care of it.</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 22 hours </div>
+                                        <div class="date"> 22 hours</div>
                                     </div>
                                 </li>
                             </ul>
@@ -2231,12 +2442,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2250,12 +2461,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New order received </div>
+                                                    <div class="desc"> New order received</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> 10 mins </div>
+                                            <div class="date"> 10 mins</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2277,7 +2488,7 @@
                                         </div>
                                     </div>
                                     <div class="col2">
-                                        <div class="date"> 24 mins </div>
+                                        <div class="date"> 24 mins</div>
                                     </div>
                                 </li>
                                 <li>
@@ -2290,12 +2501,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2309,12 +2520,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2328,12 +2539,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2347,12 +2558,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2366,12 +2577,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2385,12 +2596,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2404,12 +2615,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="cont-col2">
-                                                    <div class="desc"> New user registered </div>
+                                                    <div class="desc"> New user registered</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <div class="date"> Just now </div>
+                                            <div class="date"> Just now</div>
                                         </div>
                                     </a>
                                 </li>
@@ -2433,14 +2644,15 @@
                 </div>
                 <div class="actions">
                     <div class="btn-group">
-                        <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
+                        <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;"
+                           data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
                                 <a href="javascript:;"> Option 1</a>
                             </li>
-                            <li class="divider"> </li>
+                            <li class="divider"></li>
                             <li>
                                 <a href="javascript:;">Option 2</a>
                             </li>
@@ -2465,7 +2677,7 @@
                                 </a>
                             </div>
                             <div class="mt-img">
-                                <img src="../assets/pages/media/users/avatar80_8.jpg"> </div>
+                                <img src="/assets/pages/media/users/avatar80_8.jpg"></div>
                             <div class="mt-body">
                                 <h3 class="mt-username">Diana Ellison</h3>
                                 <p class="mt-user-title"> Lorem Ipsum is simply dummy text. </p>
@@ -2492,7 +2704,7 @@
                                 </a>
                             </div>
                             <div class="mt-img">
-                                <img src="../assets/pages/media/users/avatar80_7.jpg"> </div>
+                                <img src="/assets/pages/media/users/avatar80_7.jpg"></div>
                             <div class="mt-body">
                                 <h3 class="mt-username">Jason Baker</h3>
                                 <p class="mt-user-title"> Lorem Ipsum is simply dummy text. </p>
@@ -2519,7 +2731,7 @@
                                 </a>
                             </div>
                             <div class="mt-img">
-                                <img src="../assets/pages/media/users/avatar80_6.jpg"> </div>
+                                <img src="/assets/pages/media/users/avatar80_6.jpg"></div>
                             <div class="mt-body">
                                 <h3 class="mt-username">Julia Berry</h3>
                                 <p class="mt-user-title"> Lorem Ipsum is simply dummy text. </p>
@@ -2560,13 +2772,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mt-widget-2">
-                            <div class="mt-head" style="background-image: url(../assets/pages/img/background/32.jpg);">
+                            <div class="mt-head" style="background-image: url(/assets/pages/img/background/32.jpg);">
                                 <div class="mt-head-label">
                                     <button type="button" class="btn btn-success">Manhattan</button>
                                 </div>
                                 <div class="mt-head-user">
                                     <div class="mt-head-user-img">
-                                        <img src="../assets/pages/img/avatars/team7.jpg"> </div>
+                                        <img src="/assets/pages/img/avatars/team7.jpg"></div>
                                     <div class="mt-head-user-info">
                                         <span class="mt-user-name">Chris Jagers</span>
                                         <span class="mt-user-time">
@@ -2576,14 +2788,18 @@
                             </div>
                             <div class="mt-body">
                                 <h3 class="mt-body-title"> Thomas Clark </h3>
-                                <p class="mt-body-description"> It is a long established fact that a reader will be distracted </p>
+                                <p class="mt-body-description"> It is a long established fact that a reader will be
+                                    distracted </p>
                                 <ul class="mt-body-stats">
                                     <li class="font-green">
-                                        <i class="icon-emoticon-smile"></i> 3,7k</li>
+                                        <i class="icon-emoticon-smile"></i> 3,7k
+                                    </li>
                                     <li class="font-yellow">
-                                        <i class=" icon-social-twitter"></i> 3,7k</li>
+                                        <i class=" icon-social-twitter"></i> 3,7k
+                                    </li>
                                     <li class="font-red">
-                                        <i class="  icon-bubbles"></i> 3,7k</li>
+                                        <i class="  icon-bubbles"></i> 3,7k
+                                    </li>
                                 </ul>
                                 <div class="mt-body-actions">
                                     <div class="btn-group btn-group btn-group-justified">
@@ -2598,13 +2814,13 @@
                     </div>
                     <div class="col-md-6">
                         <div class="mt-widget-2">
-                            <div class="mt-head" style="background-image: url(../assets/pages/img/background/43.jpg);">
+                            <div class="mt-head" style="background-image: url(/assets/pages/img/background/43.jpg);">
                                 <div class="mt-head-label">
                                     <button type="button" class="btn btn-danger">London</button>
                                 </div>
                                 <div class="mt-head-user">
                                     <div class="mt-head-user-img">
-                                        <img src="../assets/pages/img/avatars/team3.jpg"> </div>
+                                        <img src="/assets/pages/img/avatars/team3.jpg"></div>
                                     <div class="mt-head-user-info">
                                         <span class="mt-user-name">Harry Harris</span>
                                         <span class="mt-user-time">
@@ -2614,14 +2830,18 @@
                             </div>
                             <div class="mt-body">
                                 <h3 class="mt-body-title"> Christian Davidson </h3>
-                                <p class="mt-body-description"> It is a long established fact that a reader will be distracted </p>
+                                <p class="mt-body-description"> It is a long established fact that a reader will be
+                                    distracted </p>
                                 <ul class="mt-body-stats">
                                     <li class="font-green">
-                                        <i class="icon-emoticon-smile"></i> 3,7k</li>
+                                        <i class="icon-emoticon-smile"></i> 3,7k
+                                    </li>
                                     <li class="font-yellow">
-                                        <i class=" icon-social-twitter"></i> 3,7k</li>
+                                        <i class=" icon-social-twitter"></i> 3,7k
+                                    </li>
                                     <li class="font-red">
-                                        <i class="  icon-bubbles"></i> 3,7k</li>
+                                        <i class="  icon-bubbles"></i> 3,7k
+                                    </li>
                                 </ul>
                                 <div class="mt-body-actions">
                                     <div class="btn-group btn-group btn-group-justified">
@@ -2660,9 +2880,9 @@
                     <div class="col-md-4">
                         <div class="mt-widget-4">
                             <div class="mt-img-container">
-                                <img src="../assets/pages/img/background/34.jpg" /> </div>
+                                <img src="/assets/pages/img/background/34.jpg"/></div>
                             <div class="mt-container bg-purple-opacity">
-                                <div class="mt-head-title"> Website Revamp & Deployment </div>
+                                <div class="mt-head-title"> Website Revamp & Deployment</div>
                                 <div class="mt-body-icons">
                                     <a href="#">
                                         <i class=" icon-pencil"></i>
@@ -2683,9 +2903,9 @@
                     <div class="col-md-4">
                         <div class="mt-widget-4">
                             <div class="mt-img-container">
-                                <img src="../assets/pages/img/background/46.jpg" /> </div>
+                                <img src="/assets/pages/img/background/46.jpg"/></div>
                             <div class="mt-container bg-green-opacity">
-                                <div class="mt-head-title"> CRM Development & Deployment </div>
+                                <div class="mt-head-title"> CRM Development & Deployment</div>
                                 <div class="mt-body-icons">
                                     <a href="#">
                                         <i class=" icon-social-twitter"></i>
@@ -2706,9 +2926,9 @@
                     <div class="col-md-4">
                         <div class="mt-widget-4">
                             <div class="mt-img-container">
-                                <img src="../assets/pages/img/background/37.jpg" /> </div>
+                                <img src="/assets/pages/img/background/37.jpg"/></div>
                             <div class="mt-container bg-dark-opacity">
-                                <div class="mt-head-title"> Marketing Campaigns </div>
+                                <div class="mt-head-title"> Marketing Campaigns</div>
                                 <div class="mt-body-icons">
                                     <a href="#">
                                         <i class=" icon-bubbles"></i>
@@ -2738,14 +2958,15 @@
                 </div>
                 <div class="actions">
                     <div class="btn-group">
-                        <a class="btn red btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
+                        <a class="btn red btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown"
+                           data-hover="dropdown" data-close-others="true"> Actions
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
                                 <a href="javascript:;"> Option 1</a>
                             </li>
-                            <li class="divider"> </li>
+                            <li class="divider"></li>
                             <li>
                                 <a href="javascript:;">Option 2</a>
                             </li>
@@ -2767,7 +2988,7 @@
                                 <div class="mt-head-icon">
                                     <i class=" icon-social-twitter"></i>
                                 </div>
-                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ... </div>
+                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ...</div>
                                 <span class="mt-head-date"> 25 Jan, 2015 </span>
                                 <div class="mt-head-button">
                                     <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>
@@ -2801,7 +3022,7 @@
                                 <div class="mt-head-icon">
                                     <i class="icon-user"></i>
                                 </div>
-                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ... </div>
+                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ...</div>
                                 <span class="mt-head-date"> 12 Feb, 2016 </span>
                                 <div class="mt-head-button">
                                     <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>
@@ -2835,7 +3056,7 @@
                                 <div class="mt-head-icon">
                                     <i class=" icon-graduation"></i>
                                 </div>
-                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ... </div>
+                                <div class="mt-head-desc"> Lorem Ipsum is simply dummy text of the ...</div>
                                 <span class="mt-head-date"> 3 Mar, 2015 </span>
                                 <div class="mt-head-button">
                                     <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>

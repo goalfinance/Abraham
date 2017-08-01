@@ -16,7 +16,7 @@
             <label class="col-md-2 control-label">密钥对名称</label>
             <div class="col-md-10">
                 <input type="text" disabled="true" class="form-control" name="userId"
-                       value="${rsaKeyInfo.name}" />
+                       value="${rsaKeyInfo.name}"/>
             </div>
         </div>
     </div>
@@ -26,13 +26,13 @@
             <label class="col-md-2 control-label">Public Exponent</label>
             <div class="col-md-3">
                 <input type="text" disabled="true" class="form-control" name="fullName"
-                       value="${rsaKeyInfo.publicKeyExponent}" />
+                       value="${rsaKeyInfo.publicKeyExponent}"/>
             </div>
             <div class="col-md-2"></div>
             <label class="col-md-2 control-label">密钥对长度</label>
             <div class="col-md-3">
                 <input type="text" disabled="true" class="form-control" name="userId"
-                       value="${rsaKeyInfo.size}" />
+                       value="${rsaKeyInfo.size}"/>
             </div>
 
         </div>

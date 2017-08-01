@@ -1,20 +1,26 @@
 package abraham.web.restcontroller.keymanager;
 
 import abraham.core.ca.domain.KeyPairInfo;
-import abraham.core.ca.service.KeyPairService;
-import abraham.core.ca.service.VOKeyPair;
+import abraham.web.restcontroller.keymanager.beans.KeyExportReqBean;
 import abraham.web.restcontroller.keymanager.beans.KeyPairBean;
+import abraham.web.service.keymanager.KeyManagerService;
+import abraham.web.service.keymanager.models.GenerateKeyPairRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
 import pan.utils.AppBizException;
 import pan.utils.ca.KeyPairSizeEnum;
 import pan.utils.ca.KeyPairTypeEnum;
-import pan.utils.web.datatables.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import pan.utils.data.Order;
 import pan.utils.web.MediaTypes;
+import pan.utils.web.datatables.DTQueryPagination;
+import pan.utils.web.datatables.DTQueryResultPagination;
+import pan.utils.web.datatables.DataTablesUtils;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.util.List;
 
 /**
@@ -24,7 +30,8 @@ import java.util.List;
 @RequestMapping("restapis/keymanager")
 public class KeyManagerRestController {
     @Autowired
-    private KeyPairService keyPairService;
+    private KeyManagerService keyManagerService;
+
 
     @RequestMapping(value = "keypair/list",
             method = RequestMethod.POST,
@@ -33,43 +40,58 @@ public class KeyManagerRestController {
         DataTablesUtils<KeyPairInfo> dtUtils = new DataTablesUtils<KeyPairInfo>();
         int pageNum = dtUtils.calcPageNumber(dtQuery);
         List<Order> orders = dtUtils.getOrders(dtQuery);
-        Page<KeyPairInfo> pkInfos = keyPairService.findAllKeyPairInfo(pageNum,
+        Page<KeyPairInfo> pkInfos = keyManagerService.findAllKeyPairs(pageNum,
                 dtQuery.getLength(), orders);
         DTQueryResultPagination<KeyPairInfo> queryResult =
                 dtUtils.convertDataTablesQueryResult(dtQuery.getDraw(), pkInfos);
         return queryResult;
     }
 
-    @RequestMapping(value="keypair",
+    @RequestMapping(value = "keypair",
             method = RequestMethod.POST,
-             consumes=MediaTypes.JSON_UTF_8)
+            consumes = MediaTypes.JSON_UTF_8)
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void newKeyPair(@RequestBody KeyPairBean keyPair) throws AppBizException{
-        VOKeyPair voKeyPair = new VOKeyPair();
-        voKeyPair.setKeyName(keyPair.getName());
-        if (keyPair.getType().equals(KeyPairTypeEnum.RSA.getName())){
-            voKeyPair.setKeyType(KeyPairTypeEnum.RSA);
-            switch(keyPair.getSize()){
-                case "1024":
-                    voKeyPair.setKeySize(KeyPairSizeEnum.SIZE_1024);
-                    break;
-                case "2048":
-                    voKeyPair.setKeySize(KeyPairSizeEnum.SIZE_2048);
-                    break;
-                case "4096":
-                    voKeyPair.setKeySize(KeyPairSizeEnum.SIZE_4096);
-                    break;
-                default:
-                    voKeyPair.setKeySize(KeyPairSizeEnum.SIZE_1024);
-            }
-            keyPairService.saveKeyPairRSA(voKeyPair);
-        }
+    public void newKeyPair(@RequestBody KeyPairBean keyPair) throws AppBizException {
+        GenerateKeyPairRequest request = new GenerateKeyPairRequest();
+        request.setKeyName(keyPair.getName());
+        request.setKeyType(KeyPairTypeEnum.valueOf(keyPair.getType()));
+        request.setKeySize(KeyPairSizeEnum.valueOf("SIZE_" + keyPair.getSize()));
+
+        keyManagerService.generateKeyPair(request);
 
     }
 
-    @RequestMapping(value="keypair/{sId}", method=RequestMethod.DELETE)
+    @RequestMapping(value = "keypair/{sId}", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteKeyPair(@PathVariable("sId") Long sId){
-        keyPairService.deleteKeyPair(sId);
+    public void deleteKeyPair(@PathVariable("sId") Long sId) throws AppBizException{
+        keyManagerService.deleteKeyPair(sId);
+    }
+
+    @RequestMapping(value = "keypair/export/{sId}", method = RequestMethod.POST)
+    public String exportKey(@PathVariable("sId") Long sId, @RequestBody KeyExportReqBean keyExportReq, HttpServletResponse response) throws AppBizException {
+//        VOKeyExportReq voKeyExportReq = new VOKeyExportReq();
+//        voKeyExportReq.setKeypairName(keyExportReq.getKeypairName());
+//        voKeyExportReq.setKeypairExportFormat(keyExportReq.getKeypairExportFormat());
+//        return keyPairService.export(voKeyExportReq);
+        return "";
+    }
+
+    @RequestMapping(value = "keypair/download", method = RequestMethod.GET)
+    public void downloadKey(@RequestParam(name = "keyName", required = true) String keyName, HttpServletResponse response) {
+        String docDirRoot = "/Users/panqingrong/Downloads/abraham/";
+
+        String keyFileName = docDirRoot + keyName + ".txt";
+
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("application/octet-stream");
+        response.setHeader("Content-Disposition", "attachment;fileName="
+                + keyName + ".txt");
+
+        try {
+            InputStream inputStream = new BufferedInputStream(new FileInputStream(new File(keyFileName)));
+            FileCopyUtils.copy(inputStream, response.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
