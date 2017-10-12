@@ -47,7 +47,7 @@ public class SecurityResourceServiceImpl implements SecurityResourceService {
     }
 
     public SecurityResource findSecurityResourceBySid(Long resourceSid) {
-        return securityResourceRepository.findOne(resourceSid);
+        return securityResourceRepository.findById(resourceSid).orElse(null);
     }
 
     public List<SecurityResourceGroup> findSecurityResourceGroupByUserSid(Long userSid) throws AppBizException {

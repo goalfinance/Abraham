@@ -27,6 +27,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import static pan.utils.Encodes.decodeHex;
+
 /**
  * @author panqingrong
  */
@@ -84,7 +86,7 @@ public class ApplicationRealm extends AuthorizingRealm {
 
         try {
             SecurityUser su = this.webSecurityService.findSecurityUserInfoByUserId(username);
-            byte[] salt = Encodes.decodeHex(su.getSalt());
+            byte[] salt = decodeHex(su.getSalt());
             return new SimpleAuthenticationInfo(createShiroUser(su), su.getPasswd(), ByteSource.Util.bytes(salt),
                     getName());
         } catch (Exception e) {

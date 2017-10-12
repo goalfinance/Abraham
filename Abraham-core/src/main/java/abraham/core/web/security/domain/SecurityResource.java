@@ -40,7 +40,7 @@ public class SecurityResource implements Serializable {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "desc")
+    @Column(name = "description")
     private String description;
 
 }

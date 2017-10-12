@@ -20,7 +20,7 @@ public class BeanValidator {
 
     public static void validate(Object object) {
         Set constraintViolations = validator.validate(object);
-        if (constraintViolations.isEmpty() == false) {
+        if (!constraintViolations.isEmpty()) {
             throw new IllegalArgumentException("Bean validating can't be passed!",
                     new ConstraintViolationException(constraintViolations));
         }

@@ -27,14 +27,14 @@ public class DSAKeyService extends AbstractKeyService {
 
     @Override
     public KeyExtInfo findKeyExtInfoBySid(long sid) {
-        return dsaKeyExtInfoRepository.findOne(sid);
+        return dsaKeyExtInfoRepository.findById(Long.valueOf(sid)).orElse(null);
     }
 
     @Override
     @Transactional
     public void deleteKeyPair(long sid) {
-        this.getKeyPairInfoRepository().delete(sid);
-        this.keyPairDSAExtInfoRepository.delete(sid);
+        this.getKeyPairInfoRepository().deleteById(sid);
+        this.keyPairDSAExtInfoRepository.deleteById(sid);
     }
 
     @Override

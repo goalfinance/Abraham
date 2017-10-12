@@ -14,13 +14,10 @@ import org.apache.shiro.web.filter.authc.LogoutFilter;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.beans.BeanInstantiationException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.embedded.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import pan.utils.security.shiro.CredentialsService;
 import pan.utils.security.shiro.HashedCredentialsService;
@@ -36,14 +33,12 @@ import java.util.Map;
  */
 @Configuration
 @EnableWebMvc
-
-public class WebConfig extends WebMvcConfigurerAdapter {
+public class WebConfig implements WebMvcConfigurer {
     @Autowired(required = false)
     private WebSecurityService webSecurityService;
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        super.configureViewResolvers(registry);
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/");
         viewResolver.setSuffix(".jsp");
@@ -53,7 +48,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        super.addResourceHandlers(registry);
         registry.addResourceHandler("/static/metronic/**").addResourceLocations("/presence/metronic/v4.7/");
         registry.addResourceHandler("/assets/**").addResourceLocations("/presence/metronic/v4.7/");
         registry.addResourceHandler("../assets/**").addResourceLocations("/presence/metronic/v4.7/");
@@ -124,9 +118,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
         try {
             Filter shiroFilter = (Filter) shiroFilterFactoryBean.getObject();
-            FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(shiroFilter);
+            FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<Filter>(shiroFilter);
             List<String> urlPatterns = new ArrayList<String>();
-            urlPatterns.add("/*");
+            urlPatterns.add("/");
             urlPatterns.add("/restapis/*");
             filterRegistrationBean.setUrlPatterns(urlPatterns);
             return filterRegistrationBean;

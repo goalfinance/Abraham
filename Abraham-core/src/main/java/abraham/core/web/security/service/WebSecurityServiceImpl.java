@@ -78,7 +78,7 @@ public class WebSecurityServiceImpl implements WebSecurityService {
         if (userId == null) {
             userId = "";
         }
-        PageRequest pageRequest = new PageRequest(pageNumber, pageSize, Order.newSort(orders));
+        PageRequest pageRequest = PageRequest.of(pageNumber, pageSize, Order.newSort(orders));
 
         return securityUserRepository.findByUserIdLike(userId, pageRequest);
     }
@@ -90,15 +90,14 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     }
 
     public SecurityUser findSecurityUserBySid(Long sid) throws AppBizException {
-        SecurityUser securityUser = securityUserRepository.findOne(sid);
-        if (securityUser == null) {
+        Optional<SecurityUser> result = securityUserRepository.findById(sid);
+        return result.orElseThrow(()->{
             Object[] args = new Object[1];
             args[0] = sid;
-            throw new AppBizException(AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[0],
+            return new AppBizException(AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[0],
                     AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[1], args);
-        } else {
-            return securityUser;
-        }
+        });
+
     }
 
     public List<SecurityRole> findAllSecurityRoles() {
@@ -157,7 +156,7 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     }
 
     public SecurityRole findSecurityRoleBySid(Long sid) throws AppBizException {
-        return securityRoleRepository.findOne(sid);
+        return securityRoleRepository.findById(sid).orElse(null);
     }
 
     @Transactional(rollbackFor = AppBizException.class)
@@ -166,9 +165,9 @@ public class WebSecurityServiceImpl implements WebSecurityService {
         securityRolePermissionRepository.deleteRolesPermission(roleSid);
         for (Long resourcePermittedId : resourcesPermitted) {
             SecurityRolePermission srp = new SecurityRolePermission();
-            SecurityResource securityResource = securityResourceReponsitory.findOne(resourcePermittedId);
+            Optional<SecurityResource> result = securityResourceReponsitory.findById(resourcePermittedId);
             srp.setRoleSid(roleSid);
-            srp.setResourceGroupSid(securityResource.getGroupSid());
+            srp.setResourceGroupSid(result.map(securityResource -> securityResource.getGroupSid()).orElse(null));
             srp.setPermission(resourcePermittedId + ":" + permittedAction);
             srp.setResourceSid(resourcePermittedId);
             srp.setStatus(SecurityRolePermission.STATUS_ACTIVE);
@@ -182,7 +181,7 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     }
 
     public SecurityRolePermission findSecurityRolePermissionBySid(Long sid) throws AppBizException {
-        return securityRolePermissionRepository.findOne(sid);
+        return securityRolePermissionRepository.findById(sid).orElse(null);
     }
 
 }

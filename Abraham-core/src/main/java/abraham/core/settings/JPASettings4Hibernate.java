@@ -17,6 +17,7 @@ public class JPASettings4Hibernate {
     private boolean generateDdl;
     private boolean showSql;
     private List<String> packagesToScan;
+    private String dialect;
 
     public boolean getGenerateDdl() {
         return generateDdl;
@@ -40,5 +41,13 @@ public class JPASettings4Hibernate {
 
     public void setPackagesToScan(List<String> packagesToScan) {
         this.packagesToScan = packagesToScan;
+    }
+
+    public String getDialect() {
+        return dialect;
+    }
+
+    public void setDialect(String dialect) {
+        this.dialect = dialect;
     }
 }

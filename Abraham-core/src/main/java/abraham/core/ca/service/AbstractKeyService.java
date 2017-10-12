@@ -9,6 +9,7 @@ import pan.utils.ca.KeyPairUtils;
 import pan.utils.data.Order;
 
 import java.util.List;
+import java.util.Optional;
 
 public abstract class AbstractKeyService implements KeyService {
     private KeyPairUtils keyPairUtils = new KeyPairUtils();
@@ -34,12 +35,13 @@ public abstract class AbstractKeyService implements KeyService {
 
     @Override
     public Page<KeyPairInfo> findAllKeyPairInfo(int pageNumber, int pageSize, List<Order> orders) {
-        PageRequest pageRequest = new PageRequest(pageNumber, pageSize, Order.newSort(orders));
+        PageRequest pageRequest = PageRequest.of(pageNumber, pageSize, Order.newSort(orders));
         return keyPairInfoRepository.findAll(pageRequest);
     }
 
     @Override
     public KeyPairInfo findKeyPairInfoBySid(long sid) {
-        return keyPairInfoRepository.findOne(sid);
+        Optional<KeyPairInfo> result = keyPairInfoRepository.findById(Long.valueOf(sid));
+        return result.orElse(null);
     }
 }

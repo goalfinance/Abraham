@@ -16,6 +16,7 @@ import pan.utils.Encodes;
 import java.security.KeyPair;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.util.Optional;
 
 @Component
 public class RSAKeyService extends AbstractKeyService {
@@ -26,14 +27,14 @@ public class RSAKeyService extends AbstractKeyService {
 
     @Override
     public KeyExtInfo findKeyExtInfoBySid(long sid) {
-        return rsaKeyExtInfoRepository.findOne(sid);
+        return rsaKeyExtInfoRepository.findById(Long.valueOf(sid)).orElse(null);
     }
 
     @Override
     @Transactional
     public void deleteKeyPair(long sid) {
-        this.getKeyPairInfoRepository().delete(sid);
-        keyPairRSAExtInfoRepository.delete(sid);
+        this.getKeyPairInfoRepository().deleteById(sid);
+        keyPairRSAExtInfoRepository.deleteById(sid);
     }
 
     @Override

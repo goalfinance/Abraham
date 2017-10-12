@@ -1,12 +1,13 @@
 abraham:
   datasource:
-    url: jdbc:mysql://localhost:3306/mas
+    jdbcUrl: jdbc:mysql://localhost:3306/mas
     username: mas
     password: mas123
-    driver-class-name: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
   jpa-hibernate:
     generate-ddl: true
     show-sql: true
+    dialect: org.hibernate.dialect.MySQL5Dialect
     packages-to-scan: 
       - abraham.core.web.security.domain
       - abraham.core.ca.domain

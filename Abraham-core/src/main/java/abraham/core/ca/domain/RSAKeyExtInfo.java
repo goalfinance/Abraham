@@ -1,6 +1,7 @@
 package abraham.core.ca.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +11,7 @@ import javax.persistence.Table;
 /**
  * Created by panqingrong on 04/10/2016.
  */
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
 @Table(name = "v_rsakey_info")

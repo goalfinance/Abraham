@@ -32,7 +32,7 @@ public class Order {
                 Sort.Direction dir = order.getDir().equals(Order.DESC) ? Sort.Direction.DESC : Sort.Direction.ASC;
                 os.add(new org.springframework.data.domain.Sort.Order(dir, order.getColumn()));
             }
-            return new Sort(os);
+            return Sort.by(os);
         } else {
             return null;
         }
