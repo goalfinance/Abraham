@@ -4,6 +4,8 @@
 package abraham.web.restcontroller.security.reception;
 
 import abraham.web.service.security.reception.models.LoginBean;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -19,6 +21,7 @@ import pan.utils.web.MediaTypes;
 @RestController
 @RequestMapping("restapis/security")
 public class SecurityReceptionRestContoller {
+    private final Log log = LogFactory.getLog(this.getClass());
 
     @RequestMapping(value = "login", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8)
     @ResponseStatus(HttpStatus.NO_CONTENT)

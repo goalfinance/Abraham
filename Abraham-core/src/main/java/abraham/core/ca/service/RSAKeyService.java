@@ -7,15 +7,14 @@ import abraham.core.ca.repository.KeyPairRSAExtInfoRepository;
 import abraham.core.ca.repository.RSAKeyExtInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import pan.utils.AppBizException;
-import pan.utils.AppExceptionCodes;
-import pan.utils.BeanValidator;
-import pan.utils.Encodes;
+import pan.utils.*;
 
 import java.security.KeyPair;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.sql.SQLException;
 import java.util.Optional;
 
 @Component
@@ -24,6 +23,8 @@ public class RSAKeyService extends AbstractKeyService {
     private KeyPairRSAExtInfoRepository keyPairRSAExtInfoRepository;
     @Autowired
     private RSAKeyExtInfoRepository rsaKeyExtInfoRepository;
+    @Autowired
+    private RSAKeyService rsaKeyService;
 
     @Override
     public KeyExtInfo findKeyExtInfoBySid(long sid) {
@@ -78,7 +79,10 @@ public class RSAKeyService extends AbstractKeyService {
         keyPairRSAExtInfo.setPublicKeyExponent(publicKeyExponent);
         keyPairRSAExtInfo.setPublicKeyModulus(publicKeyModulus);
 
-        saveKeyInfo(keyPairInfo, keyPairRSAExtInfo);
+        //When a method which is delared with 'transactional' is invoked by another one within the same class,
+        // it is not enhanced by spring. So, it is need some special coding, these codes below is the best one
+        // I can think out.
+        rsaKeyService.saveKeyInfo(keyPairInfo, keyPairRSAExtInfo);
     }
 
     @Transactional

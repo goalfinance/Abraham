@@ -54,15 +54,13 @@ public class WebSecurityServiceImpl implements WebSecurityService {
      * OutpostWebSecurityService#findSecurityUserInfoByUserId(java.lang.String)
      */
     public SecurityUser findSecurityUserInfoByUserId(String userId) throws AppBizException {
-        SecurityUser su = securityUserRepository.findByUserId(userId);
-        if (su == null) {
+        return  securityUserRepository.findByUserId(userId).orElseThrow(()->{
             Object[] args = new Object[1];
             args[0] = userId;
-            throw new AppBizException(AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[0],
+            return new AppBizException(AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[0],
                     AppExceptionCodes.SEC_USER_DOES_NOT_EXIST[1], args);
-        } else {
-            return su;
-        }
+        });
+
     }
 
     public List<SecurityUserPermission> findPermisionByUserSid(Long userSid) throws AppBizException {
@@ -76,7 +74,9 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     public Page<SecurityUser> findSecurityUserByUserId(String userId, int pageNumber, int pageSize,
                                                        List<Order> orders) {
         if (userId == null) {
-            userId = "";
+            userId = "%";
+        }else{
+            userId = "%" + userId + "%";
         }
         PageRequest pageRequest = PageRequest.of(pageNumber, pageSize, Order.newSort(orders));
 

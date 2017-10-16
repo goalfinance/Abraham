@@ -33,11 +33,6 @@ import java.util.Properties;
 @Configuration
 @EnableJpaRepositories
 @EnableTransactionManagement
-//@ComponentScan(basePackages = {
-//        "abraham.core.settings",
-//        "abraham.core.web.security.service",
-//        "abraham.core.ca.service"
-//})
 @SpringBootApplication
 public class ApplicationConfig {
     @Autowired

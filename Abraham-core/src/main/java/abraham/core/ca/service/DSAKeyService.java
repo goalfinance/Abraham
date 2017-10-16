@@ -21,9 +21,10 @@ import java.security.interfaces.DSAPublicKey;
 public class DSAKeyService extends AbstractKeyService {
     @Autowired
     private DSAKeyExtInfoRepository dsaKeyExtInfoRepository;
-
     @Autowired
     private KeyPairDSAExtInfoRepository keyPairDSAExtInfoRepository;
+    @Autowired
+    private DSAKeyService dsaKeyService;
 
     @Override
     public KeyExtInfo findKeyExtInfoBySid(long sid) {
@@ -78,7 +79,10 @@ public class DSAKeyService extends AbstractKeyService {
         keyPairDSAExtInfo.setX(x);
         keyPairDSAExtInfo.setY(y);
 
-        this.saveKeyInfo(keyPairInfo, keyPairDSAExtInfo);
+        //When a method which is declared with 'transactional' is invoked by another one within the same class,
+        // it is not enhanced by spring. So, it is need some special coding. These codes below is the best one
+        // I can think out.
+        dsaKeyService.saveKeyInfo(keyPairInfo, keyPairDSAExtInfo);
     }
 
     @Transactional

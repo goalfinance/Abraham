@@ -120,7 +120,7 @@ public class WebConfig implements WebMvcConfigurer {
             Filter shiroFilter = (Filter) shiroFilterFactoryBean.getObject();
             FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<Filter>(shiroFilter);
             List<String> urlPatterns = new ArrayList<String>();
-            urlPatterns.add("/");
+            urlPatterns.add("/*");
             urlPatterns.add("/restapis/*");
             filterRegistrationBean.setUrlPatterns(urlPatterns);
             return filterRegistrationBean;

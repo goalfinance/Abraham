@@ -1,6 +1,6 @@
 abraham:
   datasource:
-    jdbcUrl: jdbc:mysql://localhost:3306/mas
+    jdbcUrl: jdbc:mysql://localhost:3306/mas_test
     username: mas
     password: mas123
     driverClassName: com.mysql.jdbc.Driver

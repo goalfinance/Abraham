@@ -136,7 +136,7 @@ public class ApplicationRealm extends AuthorizingRealm {
         this.webSecurityService = outpostWebSecurityService;
     }
 
-    public static class ShiroUser implements Serializable {
+    public static class  ShiroUser implements Serializable {
 
         /**
          *
