@@ -1246,6 +1246,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <script src="/assets/global/plugins/jquery.serialize-object.min.js"></script>
 
+<script src="/assets/global/plugins/jquery-download/jquery.fileDownload.js"></script>
+
 <script src="/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
 

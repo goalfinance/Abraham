@@ -3,8 +3,10 @@ package abraham.web.service.keymanager;
 import abraham.core.ca.domain.DSAKeyExtInfo;
 import abraham.core.ca.domain.KeyPairInfo;
 import abraham.core.ca.domain.RSAKeyExtInfo;
+import abraham.core.ca.service.KeyExportRequest;
 import abraham.core.ca.service.KeyGenerateRequest;
 import abraham.core.ca.service.KeyService;
+import abraham.web.service.keymanager.models.ExportKeyRequest;
 import abraham.web.service.keymanager.models.GenerateKeyPairRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -15,6 +17,7 @@ import pan.utils.AppRTException;
 import pan.utils.ca.KeyPairTypeEnum;
 import pan.utils.data.Order;
 
+import java.io.OutputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -91,5 +94,15 @@ public class KeyManagerServiceImpl implements KeyManagerService {
     public KeyPairInfo findKeyPairInfoBySid(long sid) throws AppBizException {
         KeyService keyService = (KeyService) keyServices.values().toArray()[0];
         return keyService.findKeyPairInfoBySid(sid);
+    }
+
+    @Override
+    public void exportKey(ExportKeyRequest req, OutputStream outputStream) throws AppBizException {
+        KeyPairTypeEnum keyPairTypeEnum = this.findKeyPairType(req.getKeySid());
+        KeyExportRequest exportRequest = new KeyExportRequest();
+        exportRequest.setKeySid(req.getKeySid());
+        exportRequest.setKeyFileName(req.getKeyFileName());
+        exportRequest.setKeyExportFormat(req.getKeyExportFormat());
+        this.getKeyService(keyPairTypeEnum).exportKey(exportRequest, outputStream);
     }
 }

@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import pan.utils.AppBizException;
 import pan.utils.data.Order;
 
+import java.io.OutputStream;
 import java.util.List;
 
 public interface KeyService {
@@ -19,4 +20,6 @@ public interface KeyService {
     public void deleteKeyPair(long sid);
 
     public void generateKeyPair(KeyGenerateRequest keyPairInfo) throws AppBizException;
+
+    public void exportKey(KeyExportRequest req, OutputStream outputStream) throws AppBizException;
 }

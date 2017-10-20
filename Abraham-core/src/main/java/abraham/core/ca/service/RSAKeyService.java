@@ -5,15 +5,26 @@ import abraham.core.ca.domain.KeyPairInfo;
 import abraham.core.ca.domain.KeyPairRSAExtInfo;
 import abraham.core.ca.repository.KeyPairRSAExtInfoRepository;
 import abraham.core.ca.repository.RSAKeyExtInfoRepository;
+import org.bouncycastle.util.io.pem.PemGenerationException;
+import org.bouncycastle.util.io.pem.PemObject;
+import org.bouncycastle.util.io.pem.PemObjectGenerator;
+import org.bouncycastle.util.io.pem.PemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import pan.utils.*;
 
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.math.BigInteger;
+import java.security.KeyFactory;
 import java.security.KeyPair;
+import java.security.NoSuchAlgorithmException;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.RSAPublicKeySpec;
 import java.sql.SQLException;
 import java.util.Optional;
 
@@ -86,9 +97,40 @@ public class RSAKeyService extends AbstractKeyService {
     }
 
     @Transactional
-    public void saveKeyInfo(KeyPairInfo keyPairInfo, KeyPairRSAExtInfo keyPairRSAExtInfo){
+    public void saveKeyInfo(KeyPairInfo keyPairInfo, KeyPairRSAExtInfo keyPairRSAExtInfo) {
         keyPairInfo = this.getKeyPairInfoRepository().save(keyPairInfo);
         keyPairRSAExtInfo.setSid(keyPairInfo.getSid());
         keyPairRSAExtInfoRepository.save(keyPairRSAExtInfo);
+    }
+
+    @Override
+    public void exportKey(KeyExportRequest req, OutputStream outputStream) throws AppBizException {
+        KeyPairRSAExtInfo keyPairRSAExtInfo = keyPairRSAExtInfoRepository.findById(req.getKeySid()).orElseThrow(() -> {
+            Object[] args = new Object[1];
+            args[0] = req.getKeySid();
+            return new AppBizException(AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[0],
+                    AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[1], args);
+        });
+
+        KeyFactory keyFactory = null;
+        try {
+            keyFactory = KeyFactory.getInstance("RSA", new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            byte[] pubKeyModulus = Encodes.decodeHex(keyPairRSAExtInfo.getPublicKeyModulus());
+            byte[] pubKeyExponent = Encodes.decodeHex(keyPairRSAExtInfo.getPublicKeyExponent());
+            RSAPublicKeySpec publicKeySpec = new RSAPublicKeySpec(new BigInteger(pubKeyModulus), new BigInteger(pubKeyExponent));
+
+            RSAPublicKey rsaPublicKey = (RSAPublicKey) keyFactory.generatePublic(publicKeySpec);
+
+            OutputStreamWriter writer = new OutputStreamWriter(outputStream);
+            PemWriter pemWriter = new PemWriter(writer);
+            PemObject pemObject = new PemObject("PUBLIC KEY", rsaPublicKey.getEncoded());
+            pemWriter.writeObject(pemObject);
+            pemWriter.flush();
+        } catch (Exception e) {
+            throw new AppBizException(AppExceptionCodes.CA_KEY_EXPORT_ERROR[0],
+                    AppExceptionCodes.CA_KEY_EXPORT_ERROR[1], e);
+        }
+
+
     }
 }

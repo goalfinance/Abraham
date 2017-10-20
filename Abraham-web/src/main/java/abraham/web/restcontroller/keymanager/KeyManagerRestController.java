@@ -1,15 +1,19 @@
 package abraham.web.restcontroller.keymanager;
 
 import abraham.core.ca.domain.KeyPairInfo;
+import abraham.core.ca.service.KeyExportRequest;
 import abraham.web.restcontroller.keymanager.beans.KeyExportReqBean;
 import abraham.web.restcontroller.keymanager.beans.KeyPairBean;
 import abraham.web.service.keymanager.KeyManagerService;
+import abraham.web.service.keymanager.models.ExportKeyRequest;
 import abraham.web.service.keymanager.models.GenerateKeyPairRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import pan.utils.AppBizException;
 import pan.utils.ca.KeyPairSizeEnum;
 import pan.utils.ca.KeyPairTypeEnum;
@@ -65,33 +69,5 @@ public class KeyManagerRestController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteKeyPair(@PathVariable("sId") Long sId) throws AppBizException{
         keyManagerService.deleteKeyPair(sId);
-    }
-
-    @RequestMapping(value = "keypair/export/{sId}", method = RequestMethod.POST)
-    public String exportKey(@PathVariable("sId") Long sId, @RequestBody KeyExportReqBean keyExportReq, HttpServletResponse response) throws AppBizException {
-//        VOKeyExportReq voKeyExportReq = new VOKeyExportReq();
-//        voKeyExportReq.setKeypairName(keyExportReq.getKeypairName());
-//        voKeyExportReq.setKeypairExportFormat(keyExportReq.getKeypairExportFormat());
-//        return keyPairService.export(voKeyExportReq);
-        return "";
-    }
-
-    @RequestMapping(value = "keypair/download", method = RequestMethod.GET)
-    public void downloadKey(@RequestParam(name = "keyName", required = true) String keyName, HttpServletResponse response) {
-        String docDirRoot = "/Users/panqingrong/Downloads/abraham/";
-
-        String keyFileName = docDirRoot + keyName + ".txt";
-
-        response.setCharacterEncoding("utf-8");
-        response.setContentType("application/octet-stream");
-        response.setHeader("Content-Disposition", "attachment;fileName="
-                + keyName + ".txt");
-
-        try {
-            InputStream inputStream = new BufferedInputStream(new FileInputStream(new File(keyFileName)));
-            FileCopyUtils.copy(inputStream, response.getOutputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

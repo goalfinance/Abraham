@@ -10,5 +10,6 @@ import java.io.Serializable;
 @Data
 public class KeyExportReqBean implements Serializable {
     private String keypairName;
+    private String keypairFileName;
     private String keypairExportFormat;
 }

@@ -17,16 +17,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import pan.utils.security.shiro.CredentialsService;
 import pan.utils.security.shiro.HashedCredentialsService;
 
+import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletContext;
+import java.util.*;
 
 /**
  * @author panqingrong
@@ -36,6 +37,11 @@ import java.util.Map;
 public class WebConfig implements WebMvcConfigurer {
     @Autowired(required = false)
     private WebSecurityService webSecurityService;
+
+    @Override
+    public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
+        configurer.setTaskExecutor(new SimpleAsyncTaskExecutor());
+    }
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
@@ -118,11 +124,14 @@ public class WebConfig implements WebMvcConfigurer {
 
         try {
             Filter shiroFilter = (Filter) shiroFilterFactoryBean.getObject();
+
             FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<Filter>(shiroFilter);
             List<String> urlPatterns = new ArrayList<String>();
             urlPatterns.add("/*");
             urlPatterns.add("/restapis/*");
             filterRegistrationBean.setUrlPatterns(urlPatterns);
+            //For using Servlet 3.0 async
+            filterRegistrationBean.setDispatcherTypes(DispatcherType.REQUEST, DispatcherType.ASYNC);
             return filterRegistrationBean;
         } catch (Exception e) {
             throw new BeanInstantiationException(FilterRegistrationBean.class,

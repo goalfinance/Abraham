@@ -39,20 +39,25 @@ function deleteKeyPair(sId) {
 }
 
 function exportKey(sId) {
-    var formObj = $("form#exportKeyForm").serializeJSON();
-    $.ajax({
-        type: "POST",
-        url: "/restapis/keymanager/keypair/export/" + sId,
-        contentType: 'application/json',
-        data: formObj,
-        success: function (response, status, request) {
-            window.open(response);
-        },
-        error: function (status, error) {
+    var formObj = $("form#exportKeyForm").serialize();
 
-        }
-
+    $.fileDownload("/data/keymanager/export_key/" + sId,{
+        httpMethod: "POST",
+        data: formObj
     });
+    // $.ajax({
+    //     type: "POST",
+    //     url: "/restapis/keymanager/keypair/export/" + sId,
+    //     contentType: 'application/json',
+    //     data: formObj,
+    //     success: function (response, status, request) {
+    //         window.open(response);
+    //     },
+    //     error: function (status, error) {
+    //
+    //     }
+    //
+    // });
 }
 
 var KManager = function () {

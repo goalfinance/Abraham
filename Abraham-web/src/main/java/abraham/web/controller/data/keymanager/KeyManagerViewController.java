@@ -4,15 +4,20 @@ import abraham.core.ca.domain.DSAKeyExtInfo;
 import abraham.core.ca.domain.KeyPairInfo;
 import abraham.core.ca.domain.RSAKeyExtInfo;
 import abraham.core.ca.service.KeyService;
+import abraham.web.restcontroller.keymanager.beans.KeyExportReqBean;
 import abraham.web.service.keymanager.KeyManagerService;
+import abraham.web.service.keymanager.models.ExportKeyRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import pan.utils.AppBizException;
 import pan.utils.Encodes;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Map;
 
 /**
@@ -67,11 +72,35 @@ public class KeyManagerViewController {
     }
 
     @RequestMapping("show_export_key_info_modal")
-    String showKeyExportInfo(@RequestParam(name = "sId", required = true) Long sId, Model model) {
-//        RSAKeyExtInfo rsaKeyInfo = keyPairService.findKeyPairRSAInfoBySid(sId);
-//        model.addAttribute("sId", sId);
-//        model.addAttribute("keypairName", rsaKeyInfo.getName());
-//        model.addAttribute("keypairFileName", rsaKeyInfo.getName());
+    String showKeyExportInfo(@RequestParam(name = "sId", required = true) Long sId, Model model) throws AppBizException {
+        KeyPairInfo keyInfo = keyManagerService.findKeyPairInfoBySid(sId);
+        model.addAttribute("sId", sId);
+        model.addAttribute("keypairName", keyInfo.getName());
+        model.addAttribute("keypairFileName", keyInfo.getName());
         return "data/keymanager/ShowExportKeyInfo";
+    }
+
+    //Use Servlet 3 async to reduce thread occupied-time.
+    //It is not a rest API, because AJAX cannot do file-downloading well.
+    @RequestMapping(value = "export_key/{sId}", method = RequestMethod.POST)
+    public StreamingResponseBody exportKey(@PathVariable("sId") Long sId, KeyExportReqBean keyExportReq, HttpServletResponse response) throws AppBizException {
+        ExportKeyRequest exportKeyRequest = new ExportKeyRequest();
+        exportKeyRequest.setKeySid(sId);
+        exportKeyRequest.setKeyFileName(keyExportReq.getKeypairName());
+        exportKeyRequest.setKeyExportFormat(keyExportReq.getKeypairExportFormat());
+
+        //TODO To support more file format, not only .pem
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("application/octet-stream");
+        response.setHeader("Content-Disposition", "attachment;fileName="
+                + exportKeyRequest.getKeyFileName() + ".pem");
+
+        return (OutputStream outputStream)->{
+            try {
+                keyManagerService.exportKey(exportKeyRequest, outputStream);
+            } catch (AppBizException e) {
+                throw new IOException(e.getTextMessage(),e);
+            }
+        };
     }
 }

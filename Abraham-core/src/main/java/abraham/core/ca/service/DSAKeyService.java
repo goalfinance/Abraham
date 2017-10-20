@@ -13,6 +13,7 @@ import pan.utils.AppExceptionCodes;
 import pan.utils.BeanValidator;
 import pan.utils.Encodes;
 
+import java.io.OutputStream;
 import java.security.KeyPair;
 import java.security.interfaces.DSAPrivateKey;
 import java.security.interfaces.DSAPublicKey;
@@ -90,5 +91,10 @@ public class DSAKeyService extends AbstractKeyService {
         keyPairInfo = this.getKeyPairInfoRepository().save(keyPairInfo);
         keyPairDSAExtInfo.setSid(keyPairInfo.getSid());
         keyPairDSAExtInfoRepository.save(keyPairDSAExtInfo);
+    }
+
+    @Override
+    public void exportKey(KeyExportRequest req, OutputStream outputStream) throws AppBizException {
+        throw new AppBizException(AppExceptionCodes.UNSUPPORTED_FUNCTION[0], AppExceptionCodes.UNSUPPORTED_FUNCTION[1]);
     }
 }
