@@ -26,5 +26,7 @@ public interface KeyManagerService {
 
     public KeyPairInfo findKeyPairInfoBySid(long sid) throws AppBizException;
 
+    public KeyPairInfo updateKeyPairInfo(KeyPairInfo keyPairInfo) throws AppBizException;
+
     public void exportKey(ExportKeyRequest req, OutputStream outputStream) throws AppBizException;
 }

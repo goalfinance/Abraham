@@ -76,5 +76,6 @@
     <modules>
         <module>abraham-core</module>
         <module>abraham-web</module>
+        <module>isaac</module>
     </modules>
 </project>

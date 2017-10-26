@@ -3,7 +3,7 @@ package abraham.web.controller.data.keymanager;
 import abraham.core.ca.domain.DSAKeyExtInfo;
 import abraham.core.ca.domain.KeyPairInfo;
 import abraham.core.ca.domain.RSAKeyExtInfo;
-import abraham.core.ca.service.KeyService;
+import abraham.core.isaac.domain.File;
 import abraham.web.restcontroller.keymanager.beans.KeyExportReqBean;
 import abraham.web.service.keymanager.KeyManagerService;
 import abraham.web.service.keymanager.models.ExportKeyRequest;
@@ -11,14 +11,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import pan.utils.AppBizException;
 import pan.utils.Encodes;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Map;
 
 /**
  * Created by panqingrong on 29/09/2016.
@@ -28,6 +29,9 @@ import java.util.Map;
 public class KeyManagerViewController {
     @Autowired
     private KeyManagerService keyManagerService;
+
+    @Autowired
+    private RestTemplate restTemplateIsaac;
 
     @RequestMapping("show_main_view")
     String showMainView(Model model) {
@@ -94,13 +98,46 @@ public class KeyManagerViewController {
         response.setContentType("application/octet-stream");
         response.setHeader("Content-Disposition", "attachment;fileName="
                 + exportKeyRequest.getKeyFileName() + ".pem");
+        KeyPairInfo keyPairInfo = keyManagerService.findKeyPairInfoBySid(sId);
+        String exportedFileId = keyPairInfo.getExported();
 
         return (OutputStream outputStream)->{
-            try {
-                keyManagerService.exportKey(exportKeyRequest, outputStream);
-            } catch (AppBizException e) {
-                throw new IOException(e.getTextMessage(),e);
+            if (exportedFileId != null && !exportedFileId.equals("")){
+                File file = restTemplateIsaac.getForObject("http://isaac/filemanager/file/" + exportedFileId, abraham.core.isaac.domain.File.class);
+                if (file != null){
+                    outputStream.write(file.getContent());
+                    outputStream.flush();
+                }else{
+                    //todo: If the file does not exist in FileManager, we need some codes to handle this.
+                }
+            }else{
+                ByteArrayOutputStream byteArrayOutputStream = null;
+                try {
+                    byteArrayOutputStream = new ByteArrayOutputStream();
+                    keyManagerService.exportKey(exportKeyRequest, byteArrayOutputStream);
+                    File file = new File();
+
+                    file.setContent(byteArrayOutputStream.toByteArray());
+                    file = restTemplateIsaac.postForObject("http://isaac/filemanager/file", file, File.class);
+
+                    keyPairInfo.setExported(file.getId());
+                    keyManagerService.updateKeyPairInfo(keyPairInfo);
+
+                    outputStream.write(byteArrayOutputStream.toByteArray());
+                    outputStream.flush();
+
+                } catch (Throwable e) {
+
+                    throw new IOException(e.getMessage(),e);
+                }finally {
+                    if (byteArrayOutputStream != null){
+                        byteArrayOutputStream.close();
+                    }
+                }
+
             }
+
+
         };
     }
 }

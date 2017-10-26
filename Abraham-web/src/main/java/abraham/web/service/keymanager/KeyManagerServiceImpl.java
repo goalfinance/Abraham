@@ -97,6 +97,12 @@ public class KeyManagerServiceImpl implements KeyManagerService {
     }
 
     @Override
+    public KeyPairInfo updateKeyPairInfo(KeyPairInfo keyPairInfo) throws AppBizException {
+        KeyService keyService = (KeyService) keyServices.values().toArray()[0];
+        return keyService.updateKeyPairInfo(keyPairInfo);
+    }
+
+    @Override
     public void exportKey(ExportKeyRequest req, OutputStream outputStream) throws AppBizException {
         KeyPairTypeEnum keyPairTypeEnum = this.findKeyPairType(req.getKeySid());
         KeyExportRequest exportRequest = new KeyExportRequest();

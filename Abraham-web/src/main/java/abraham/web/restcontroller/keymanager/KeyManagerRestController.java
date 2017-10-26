@@ -9,10 +9,14 @@ import abraham.web.service.keymanager.models.ExportKeyRequest;
 import abraham.web.service.keymanager.models.GenerateKeyPairRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import pan.utils.AppBizException;
 import pan.utils.ca.KeyPairSizeEnum;
@@ -22,6 +26,7 @@ import pan.utils.web.MediaTypes;
 import pan.utils.web.datatables.DTQueryPagination;
 import pan.utils.web.datatables.DTQueryResultPagination;
 import pan.utils.web.datatables.DataTablesUtils;
+import reactor.core.publisher.Mono;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -35,6 +40,9 @@ import java.util.List;
 public class KeyManagerRestController {
     @Autowired
     private KeyManagerService keyManagerService;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
 
     @RequestMapping(value = "keypair/list",

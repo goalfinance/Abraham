@@ -13,7 +13,9 @@ public interface KeyService {
 
     public KeyExtInfo findKeyExtInfoBySid(long sid);
 
-    public KeyPairInfo findKeyPairInfoBySid(long sid);
+    public KeyPairInfo findKeyPairInfoBySid(long sid) throws AppBizException;
+
+    public KeyPairInfo updateKeyPairInfo(KeyPairInfo keyPairInfo);
 
     public Page<KeyPairInfo> findAllKeyPairInfo(int pageNumber, int pageSize, List<Order> orders);
 

@@ -11,3 +11,12 @@ abraham:
     packages-to-scan: 
       - abraham.core.web.security.domain
       - abraham.core.ca.domain
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: Abraham-web

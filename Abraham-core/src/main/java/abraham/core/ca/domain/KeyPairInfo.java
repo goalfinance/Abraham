@@ -31,4 +31,7 @@ public class KeyPairInfo {
     @Column(name = "key_use")
     private int use = 0;
 
+    @Column(name = "exproted")
+    private String exported;
+
 }

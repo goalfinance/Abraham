@@ -5,6 +5,8 @@ import abraham.core.ca.repository.KeyPairInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import pan.utils.AppBizException;
+import pan.utils.AppExceptionCodes;
 import pan.utils.ca.KeyPairUtils;
 import pan.utils.data.Order;
 
@@ -40,8 +42,17 @@ public abstract class AbstractKeyService implements KeyService {
     }
 
     @Override
-    public KeyPairInfo findKeyPairInfoBySid(long sid) {
+    public KeyPairInfo findKeyPairInfoBySid(long sid) throws AppBizException {
         Optional<KeyPairInfo> result = keyPairInfoRepository.findById(Long.valueOf(sid));
-        return result.orElse(null);
+        return result.orElseThrow(()->{
+            Object[] args = new Object[1];
+            args[0] = sid;
+            return new AppBizException(AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[0], AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[1], args);
+        });
+    }
+
+    @Override
+    public KeyPairInfo updateKeyPairInfo(KeyPairInfo keyPairInfo) {
+        return keyPairInfoRepository.save(keyPairInfo);
     }
 }
