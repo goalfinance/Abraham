@@ -39,14 +39,29 @@ public class AppExceptionCodes {
     public static final String[] SEC_PASSWORD_INPUT_TWICE_NOT_MATCHED = {"R.MAS.OUTPOST-WEB-SEC.0004", "Both the input passwords must be consistent."};
 
     /**
-     * The name of keypair is exist in system.
+     * The role does not exist in system.
      */
-    public static final String[] CA_KEYPAIR_NAME_EXIST = {"R.CA.KEY-MANAGER.001", "The key pair[key name={0}] is exist in system."};
+    public static final String[] SEC_SECURITY_ROLE_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0005", "The role[roleId={0}] does not exist in system."};
 
     /**
-     * The keypair is not exist in system.
+     * The permission of a role does not exist in system.
      */
-    public static final String[] CA_KEYPAIR_NOT_EXIST = {"R.CA.KEY-MANAGER.002", "The keypair[key sid={0}] is not exist in system."};
+    public static final String[] SEC_ROLE_PERMISSION_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0006", "The permission[sid={0}] of a role does not exist in system."};
+
+    /**
+     * The security resource does not exist in system.
+     */
+    public static final String[] SEC_SECURITY_RESOURCE_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0007", "The security resource[sid={0}] does not exist in system.]"};
+
+    /**
+     * The name of keypair has existed in system.
+     */
+    public static final String[] CA_KEYPAIR_NAME_EXIST = {"R.CA.KEY-MANAGER.001", "The key pair[key name={0}] has existed in system."};
+
+    /**
+     * The keypair does not exist in system.
+     */
+    public static final String[] CA_KEYPAIR_NOT_EXIST = {"R.CA.KEY-MANAGER.002", "The keypair[key sid={0}] does not exist in system."};
 
     /**
      * There is error when exporting a key.

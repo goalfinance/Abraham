@@ -12,6 +12,7 @@ import abraham.core.web.security.repository.SecurityResourceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pan.utils.AppBizException;
+import pan.utils.AppExceptionCodes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,8 +47,13 @@ public class SecurityResourceServiceImpl implements SecurityResourceService {
         return securityResourceRepository.findByGroupSidOrderBySortIdx(groupSid);
     }
 
-    public SecurityResource findSecurityResourceBySid(Long resourceSid) {
-        return securityResourceRepository.findById(resourceSid).orElse(null);
+    public SecurityResource findSecurityResourceBySid(Long resourceSid) throws AppBizException{
+        return securityResourceRepository.findById(resourceSid).orElseThrow(()->{
+            Object[] args = new Object[1];
+            args[0] = resourceSid;
+            return new AppBizException(AppExceptionCodes.SEC_SECURITY_RESOURCE_DOES_NOT_EXIST[0],
+                    AppExceptionCodes.SEC_SECURITY_RESOURCE_DOES_NOT_EXIST[1]);
+        });
     }
 
     public List<SecurityResourceGroup> findSecurityResourceGroupByUserSid(Long userSid) throws AppBizException {

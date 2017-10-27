@@ -1,6 +1,7 @@
 package abraham.isaac.web.controller;
 
-import abraham.core.isaac.domain.File;
+import abraham.core.isaac.bean.FileInfo;
+import abraham.isaac.domain.File;
 import abraham.isaac.repository.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +19,13 @@ public class FileController {
     }
 
     @GetMapping("filemanager/file/{fid}")
-    public Mono<File> get(@PathVariable String fid){
-        Mono<File> result = fileRepository.findById(fid);
+    public Mono<FileInfo> get(@PathVariable String fid){
+        Mono<FileInfo> result = fileRepository.findById(fid).map(file -> {
+            abraham.core.isaac.bean.FileInfo fileInfo = new abraham.core.isaac.bean.FileInfo();
+            fileInfo.setId(file.getId());
+            fileInfo.setContent(file.getContent());
+            return fileInfo;
+        });
         return result;
     }
 

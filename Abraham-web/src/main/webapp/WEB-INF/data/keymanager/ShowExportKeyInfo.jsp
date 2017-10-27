@@ -12,6 +12,10 @@
 </div>
 <div class="modal-body">
     <form id="exportKeyForm" data-ajax="true" method="post" class="form-horizontal">
+        <div class="alert alert-danger display-hide">
+
+        </div>
+
         <div class="form-group">
             <div class="row">
                 <label class="col-md-2 control-label">密钥对名称</label>

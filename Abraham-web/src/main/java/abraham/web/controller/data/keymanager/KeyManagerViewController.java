@@ -3,11 +3,13 @@ package abraham.web.controller.data.keymanager;
 import abraham.core.ca.domain.DSAKeyExtInfo;
 import abraham.core.ca.domain.KeyPairInfo;
 import abraham.core.ca.domain.RSAKeyExtInfo;
-import abraham.core.isaac.domain.File;
+import abraham.core.isaac.bean.FileInfo;
 import abraham.web.restcontroller.keymanager.beans.KeyExportReqBean;
 import abraham.web.service.keymanager.KeyManagerService;
 import abraham.web.service.keymanager.models.ExportKeyRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -103,7 +105,7 @@ public class KeyManagerViewController {
 
         return (OutputStream outputStream)->{
             if (exportedFileId != null && !exportedFileId.equals("")){
-                File file = restTemplateIsaac.getForObject("http://isaac/filemanager/file/" + exportedFileId, abraham.core.isaac.domain.File.class);
+                FileInfo file = restTemplateIsaac.getForObject("http://isaac/filemanager/file/" + exportedFileId, FileInfo.class);
                 if (file != null){
                     outputStream.write(file.getContent());
                     outputStream.flush();
@@ -115,10 +117,10 @@ public class KeyManagerViewController {
                 try {
                     byteArrayOutputStream = new ByteArrayOutputStream();
                     keyManagerService.exportKey(exportKeyRequest, byteArrayOutputStream);
-                    File file = new File();
+                    FileInfo file = new FileInfo();
 
                     file.setContent(byteArrayOutputStream.toByteArray());
-                    file = restTemplateIsaac.postForObject("http://isaac/filemanager/file", file, File.class);
+                    file = restTemplateIsaac.postForObject("http://isaac/filemanager/file", file, FileInfo.class);
 
                     keyPairInfo.setExported(file.getId());
                     keyManagerService.updateKeyPairInfo(keyPairInfo);
@@ -140,4 +142,5 @@ public class KeyManagerViewController {
 
         };
     }
+
 }

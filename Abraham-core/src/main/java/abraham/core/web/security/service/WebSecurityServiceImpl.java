@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import pan.utils.AppBizException;
 import pan.utils.AppExceptionCodes;
+import pan.utils.AppRTException;
 import pan.utils.data.Order;
 import pan.utils.security.shiro.CredentialsService;
 
@@ -156,7 +157,12 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     }
 
     public SecurityRole findSecurityRoleBySid(Long sid) throws AppBizException {
-        return securityRoleRepository.findById(sid).orElse(null);
+        return securityRoleRepository.findById(sid).orElseThrow(()->{
+            Object[] args = new Object[1];
+            args[0] = sid;
+            return new AppBizException(AppExceptionCodes.SEC_SECURITY_ROLE_DOES_NOT_EXIST[0],
+                    AppExceptionCodes.SEC_SECURITY_ROLE_DOES_NOT_EXIST[1]);
+        });
     }
 
     @Transactional(rollbackFor = AppBizException.class)
@@ -181,7 +187,12 @@ public class WebSecurityServiceImpl implements WebSecurityService {
     }
 
     public SecurityRolePermission findSecurityRolePermissionBySid(Long sid) throws AppBizException {
-        return securityRolePermissionRepository.findById(sid).orElse(null);
+        return securityRolePermissionRepository.findById(sid).orElseThrow(()->{
+            Object[] args = new Object[1];
+            args[0] = sid;
+            return new AppBizException(AppExceptionCodes.SEC_ROLE_PERMISSION_DOES_NOT_EXIST[0],
+                    AppExceptionCodes.SEC_ROLE_PERMISSION_DOES_NOT_EXIST[1]);
+        });
     }
 
 }

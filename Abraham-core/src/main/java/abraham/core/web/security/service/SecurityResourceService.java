@@ -18,7 +18,7 @@ public interface SecurityResourceService {
 
     public List<SecurityResource> findSecurityResourceByGroupSid(Long groupSid) throws AppBizException;
 
-    public SecurityResource findSecurityResourceBySid(Long resourceSid);
+    public SecurityResource findSecurityResourceBySid(Long resourceSid) throws AppBizException;
 
     public List<SecurityResourceGroup> findSecurityResourceGroupByUserSid(Long userSid) throws AppBizException;
 

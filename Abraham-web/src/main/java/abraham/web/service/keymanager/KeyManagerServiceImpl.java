@@ -46,12 +46,6 @@ public class KeyManagerServiceImpl implements KeyManagerService {
         KeyService keyService = (KeyService) keyServices.values().toArray()[0];
 
         KeyPairInfo keyPairInfo = keyService.findKeyPairInfoBySid(sid);
-        if (keyPairInfo == null){
-            Object[] objs = new Object[1];
-            objs[0] = sid;
-            throw new AppBizException(AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[0], AppExceptionCodes.CA_KEYPAIR_NOT_EXIST[0], objs);
-
-        }
 
         return KeyPairTypeEnum.valueOf(keyPairInfo.getType());
 

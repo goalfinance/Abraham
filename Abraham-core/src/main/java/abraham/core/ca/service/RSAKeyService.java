@@ -61,7 +61,7 @@ public class RSAKeyService extends AbstractKeyService {
 
         BeanValidator.validate(request);
 
-        if (null != this.getKeyPairInfoRepository().findByName(request.getKeyName())) {
+        if (this.getKeyPairInfoRepository().findByName(request.getKeyName()).isPresent()) {
             Object[] args = new Object[1];
             args[0] = request.getKeyName();
             throw new AppBizException(AppExceptionCodes.CA_KEYPAIR_NAME_EXIST[0],

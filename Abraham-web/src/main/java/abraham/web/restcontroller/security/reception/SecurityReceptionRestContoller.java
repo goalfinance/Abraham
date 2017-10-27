@@ -34,15 +34,4 @@ public class SecurityReceptionRestContoller {
         currentUser.login(token);
 
     }
-
-    @ExceptionHandler(AuthenticationException.class)
-    public ResponseEntity<String> handleAuthenticationException(AuthenticationException e) {
-        Subject currentUser = SecurityUtils.getSubject();
-        if (currentUser.isAuthenticated()) {
-            currentUser.logout();
-        }
-        ResponseEntity<String> responseEntity = new ResponseEntity<String>("You can not pass the authentication!", HttpStatus.FORBIDDEN);
-        return responseEntity;
-    }
-
 }

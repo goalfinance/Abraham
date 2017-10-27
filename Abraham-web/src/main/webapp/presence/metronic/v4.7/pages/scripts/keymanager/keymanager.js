@@ -16,7 +16,7 @@ function addKeyPair() {
             $('.alert-danger', $('#addKeyPairForm')).hide();
         },
         error: function (status, error) {
-            $('.alert-danger', $('#addKeyPairForm')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseJSON.message);
+            $('.alert-danger', $('#addKeyPairForm')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseText);
             $('.alert-danger', $('#addKeyPairForm')).show();
         }
     });
@@ -32,7 +32,7 @@ function deleteKeyPair(sId) {
             $('#modal_delete_keypair_confirm').modal('hide');
         },
         error: function (status, error) {
-            $('.alert-danger', $('#keypairDeleteConfirm')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseJSON.message);
+            $('.alert-danger', $('#keypairDeleteConfirm')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseText);
             $('.alert-danger', $('#keypairDeleteConfirm')).show();
         }
     });
@@ -44,7 +44,13 @@ function exportKey(sId) {
     $.fileDownload("/data/keymanager/export_key/" + sId,{
         httpMethod: "POST",
         data: formObj
-    });
+    }).done(function(){
+        $('#modal_export_key').modal('hide');
+        $('.alert-danger', $('#exportKeyForm')).hide();
+    }).fail(function(){
+        $('.alert-danger', $('#exportKeyForm')).html('<button class="close" data-close="alert"></button><strong>警告！下载文件失败。</strong> ' );
+        $('.alert-danger', $('#exportKeyForm')).show();
+    })
     // $.ajax({
     //     type: "POST",
     //     url: "/restapis/keymanager/keypair/export/" + sId,
