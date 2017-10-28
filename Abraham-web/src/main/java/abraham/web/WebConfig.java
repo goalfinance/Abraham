@@ -39,6 +39,12 @@ public class WebConfig implements WebMvcConfigurer {
     private WebSecurityService webSecurityService;
 
     @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        //registry.addRedirectViewController("/", "index.jsp");
+        registry.addViewController("/").setViewName("forward:/index.jsp");
+    }
+
+    @Override
     public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
         configurer.setTaskExecutor(new SimpleAsyncTaskExecutor());
     }

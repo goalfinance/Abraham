@@ -80,7 +80,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="row">
                         <div class="col-xs-6">
                             <input class="form-control form-control-solid placeholder-no-fix form-group" type="text"
-                                   autocomplete="off" placeholder="用户名" name="username" required/></div>
+                                   autocomplete="off" autofocus = "autofocus" placeholder="用户名" name="username" required/></div>
                         <div class="col-xs-6">
                             <input class="form-control form-control-solid placeholder-no-fix form-group" type="password"
                                    autocomplete="off" placeholder="密码" name="password" required/></div>
@@ -179,6 +179,9 @@ License: You must have a valid license purchased only from themeforest(the above
         });
         return false;
     }
+    $(document).ready(function() {
+        $(".login-form").find("[autofocus]:first").focus();
+    });
 </script>
 </body>
 

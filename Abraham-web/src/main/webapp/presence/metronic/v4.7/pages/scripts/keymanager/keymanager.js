@@ -1,6 +1,10 @@
 /**
  * Created by panqingrong on 19/10/2016.
  */
+function modalDefaultFocus() {
+    $(this).find("[autofocus]:first").focus();
+}
+
 function addKeyPair() {
     var formObj = $("form#addKeyPairForm").serializeJSON();
     $.ajax({
@@ -12,7 +16,7 @@ function addKeyPair() {
             var table = $('#keypairs_table').DataTable();
             table.ajax.reload();
             document.getElementById("addKeyPairForm").reset();
-            $('#modal_adding_keypair').modal('hide');
+            $('#modal_keypair').modal('hide');
             $('.alert-danger', $('#addKeyPairForm')).hide();
         },
         error: function (status, error) {
@@ -29,7 +33,7 @@ function deleteKeyPair(sId) {
         success: function (result, status) {
             var table = $('#keypairs_table').DataTable();
             table.ajax.reload();
-            $('#modal_delete_keypair_confirm').modal('hide');
+            $('#modal_keypair').modal('hide');
         },
         error: function (status, error) {
             $('.alert-danger', $('#keypairDeleteConfirm')).html('<button class="close" data-close="alert"></button><strong>警告！</strong> ' + status.responseText);
@@ -45,7 +49,7 @@ function exportKey(sId) {
         httpMethod: "POST",
         data: formObj
     }).done(function(){
-        $('#modal_export_key').modal('hide');
+        $('#modal_keypair').modal('hide');
         $('.alert-danger', $('#exportKeyForm')).hide();
     }).fail(function(){
         $('.alert-danger', $('#exportKeyForm')).html('<button class="close" data-close="alert"></button><strong>警告！下载文件失败。</strong> ' );
@@ -71,9 +75,9 @@ var KManager = function () {
         var table = $('#keypairs_table');
         table.on('xhr.dt', function (e, settings, json, xhr) {
             for (var i = 0, len = json.data.length; i < len; i++) {
-                json.data[i]["view"] = '<a class="view" data-toggle="modal" data-target="#modal_view_keypair_info" href="/data/keymanager/show_keypair_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> View </a>';
-                json.data[i]["delete"] = '<a class="delete" data-toggle="modal" data-target="#modal_delete_keypair_confirm" href="/data/keymanager/show_keypair_delete_confirm_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> Delete </a>';
-                json.data[i]["export"] = '<a class="export" data-toggle="modal" data-target="#modal_export_key" href="/data/keymanager/show_export_key_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> Export </a>';
+                json.data[i]["view"] = '<button class="btn green" data-toggle="modal" data-target="#modal_keypair" href="/data/keymanager/show_keypair_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> View </button>';
+                json.data[i]["delete"] = '<button class="btn green" data-toggle="modal" data-target="#modal_keypair" href="/data/keymanager/show_keypair_delete_confirm_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> Delete </button>';
+                json.data[i]["export"] = '<button class="btn green" data-toggle="modal" data-target="#modal_keypair" href="/data/keymanager/show_export_key_info_modal?sId=' + json.data[i]["sid"] + '&keyType=' + json.data[i]["type"] + '"> Export </button>';
 
             }
         });

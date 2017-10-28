@@ -356,7 +356,7 @@ var App = function() {
         $('body').on('show.bs.modal', '.modal', function() {
             if ($(this).hasClass("modal-scroll")) {
                 $('body').addClass("modal-open-noscroll");
-            }
+            };
         });
 
         // fix page scrollbars issue
@@ -368,6 +368,7 @@ var App = function() {
         $('body').on('hidden.bs.modal', '.modal:not(.modal-cached)', function () {
             $(this).removeData('bs.modal');
         });
+
     };
 
     // Handles Bootstrap Tooltips.
@@ -569,7 +570,12 @@ var App = function() {
             }
        });       
     }
-    
+
+    var handleModalDefaultFocus = function() {
+        $(".modal").on('shown', function() {
+            $(this).find("[autofocus]:first").focus();
+        });
+    }
     //* END:CORE HANDLERS *//
 
     return {
@@ -621,6 +627,7 @@ var App = function() {
             handlePopovers(); // handles bootstrap popovers
             handleAccordions(); //handles accordions 
             handleBootstrapConfirmation(); // handle bootstrap confirmations
+            //handleModalDefaultFocus();
         },
 
         //init main components 
@@ -1017,4 +1024,5 @@ var App = function() {
 
 jQuery(document).ready(function() {    
    App.init(); // init metronic core componets
+
 });

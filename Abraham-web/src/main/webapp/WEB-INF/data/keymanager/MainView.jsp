@@ -54,7 +54,7 @@
                         <div class="col-md-6">
                             <div class="btn-group">
                                 <button id="keypair_new" class="btn green" data-toggle="modal"
-                                        href="#modal_adding_keypair">生成密钥对
+                                        data-target="#modal_keypair" href="/data/keymanager/show_add_keypair_form_modal">生成密钥对
                                     <i class="fa fa-plus"></i>
                                 </button>
                             </div>
@@ -149,56 +149,8 @@
     </div>
 </div>
 
-<!-- BEGIN Modal for adding key pair -->
-<div id="modal_adding_keypair" class="modal fade" tabindex="-1" data-width="700">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-        <h4 class="modal-title">生成密钥对</h4>
-    </div>
-    <div class="modal-body">
-        <form id="addKeyPairForm" data-ajax="true" method="post" class="form-horizontal">
-            <div class="alert alert-danger display-hide">
-
-            </div>
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">内部名称</label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" name="name"
-                               value="${keypPair.name}"/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">密钥类型</label>
-                    <div class="col-sm-4">
-                        <select class="form-control" name="type" value="${keyPair.type}">
-                            <option value="RSA">RSA</option>
-                            <option value="DSA">DSA</option>
-                            <option value="EC">EC</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">密钥长度</label>
-                    <div class="col-sm-4">
-                        <select class="form-control" name="size" value="${keyPair.size}">
-                            <option value="1024">1024</option>
-                            <option value="2048">2048</option>
-                            <option value="4096">4096</option>
-                        </select>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </div>
-    <div class="modal-footer">
-        <button type="button" data-dismiss="modal" class="btn btn-outline dark">关闭</button>
-        <button type="button" class="btn green" onclick="addKeyPair();">生成</button>
-    </div>
-</div>
-<!-- END Modal for adding key pair-->
-<div id="modal_view_keypair_info" class="modal fade" tabindex="-1" data-width="700">
+<!-- BEGIN Modal -->
+<div id="modal_keypair" class="modal fade" data-width="700" onload="modalDefaultFocus();">
     <div class="modal-content">
         <div class="modal-body">
             <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
@@ -206,28 +158,13 @@
         </div>
     </div>
 </div>
-
-<div id="modal_delete_keypair_confirm" class="modal fade" tabindex="-1">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
-            <span> &nbsp;&nbsp;Loading... </span>
-        </div>
-    </div>
-</div>
-
-<div id="modal_export_key" class="modal fade" tabindex="-1">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
-            <span> &nbsp;&nbsp;Loading... </span>
-        </div>
-    </div>
-</div>
+<!-- END Modal -->
 
 <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
 <script src="/assets/pages/scripts/keymanager/keymanager.js" type="text/javascript"></script>
+
+
 
 
 

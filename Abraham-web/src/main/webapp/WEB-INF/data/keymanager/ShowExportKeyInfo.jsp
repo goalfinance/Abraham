@@ -29,7 +29,7 @@
             <div class="row">
                 <label class="col-md-2 control-label">导出文件名</label>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" name="keypairFileName"
+                    <input type="text" class="form-control" name="keypairFileName" autofocus="autofocus"
                            value="${keypairFileName}"/>
                 </div>
             </div>

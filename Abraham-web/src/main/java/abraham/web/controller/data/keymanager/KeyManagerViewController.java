@@ -40,6 +40,11 @@ public class KeyManagerViewController {
         return "data/keymanager/MainView";
     }
 
+    @RequestMapping("show_add_keypair_form_modal")
+    String showAddKeyPairForm(Model model) throws AppBizException{
+        return "data/keymanager/AddKeyPairForm";
+    }
+
     @RequestMapping("show_keypair_info_modal")
     String showKeyPairRSAInfo(@RequestParam(name = "sId", required = true) String sId,
                               @RequestParam(name = "keyType", required = true) String keyType,
