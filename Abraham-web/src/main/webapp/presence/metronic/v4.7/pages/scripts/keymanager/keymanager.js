@@ -177,8 +177,12 @@ var KManager = function () {
 if (App.isAngularJsApp() === false) {
     jQuery(document).ready(function () {
         KManager.init();
-        // $('#modal_adding_keypair').on('show.bs.modal', function(){
-        //     alert("test");
-        // });
+        $(document).on('shown.bs.modal', function(){
+            //If your modal has a 'fade' property, this approach may not work, depending on what seem to be some pretty obscure timing conditions.
+            //So here setting a delay.
+            window.setTimeout(function() {
+                $('[autofocus]', this).focus();
+            }.bind(this), 100);
+        });
     });
 }

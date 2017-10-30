@@ -19,7 +19,7 @@
             <div class="form-group">
                 <label class="col-sm-3 control-label">内部名称</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="name" autofocus="autofocus"
+                    <input id="keypairName" type="text" class="form-control" name="name" autofocus
                            value="${keypPair.name}"/>
                 </div>
             </div>
@@ -52,10 +52,4 @@
     <button type="button" class="btn green" onclick="addKeyPair();">生成</button>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $(".modal").on('shown.bs.modal', function() {
-            $(this).find("[autofocus]:first").focus();
-        });
-    });
-</script>
+

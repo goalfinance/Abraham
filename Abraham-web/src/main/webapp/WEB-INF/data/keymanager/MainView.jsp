@@ -150,7 +150,7 @@
 </div>
 
 <!-- BEGIN Modal -->
-<div id="modal_keypair" class="modal fade" data-width="700" onload="modalDefaultFocus();">
+<div id="modal_keypair" class="modal fade" role="dialog" data-backdrop="static">
     <div class="modal-content">
         <div class="modal-body">
             <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
@@ -163,7 +163,6 @@
 <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
 <script src="/assets/pages/scripts/keymanager/keymanager.js" type="text/javascript"></script>
-
 
 
 
