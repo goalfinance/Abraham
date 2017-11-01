@@ -73,6 +73,12 @@ var AddUserForm = function(){
 
 if (App.isAngularJsApp() === false) {
     jQuery(document).ready(function() {
-        AddUserForm.init();
+        $(document).on('shown.bs.modal', function(){
+            window.setTimeout(function(){
+                AddUserForm.init();
+                $("[autofocus]:first", this).focus();
+            }.bind(this), 100);
+
+        });
     });
 }

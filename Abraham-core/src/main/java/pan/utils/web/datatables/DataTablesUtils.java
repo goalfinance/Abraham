@@ -4,6 +4,7 @@ import org.springframework.data.domain.Page;
 import pan.utils.data.Order;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -17,6 +18,16 @@ public class DataTablesUtils<T> {
         queryResult.setDraw(reqDraw);
         queryResult.setRecordsTotal(pagedResult.getTotalElements());
         queryResult.setRecordsFiltered(pagedResult.getTotalElements());
+
+        return queryResult;
+    }
+
+    public DTQueryResultPagination<T> convertDataTablesQueryResult(Integer reqDraw, Collection<T> result) {
+        DTQueryResultPagination<T> queryResult = new DTQueryResultPagination<T>();
+        queryResult.setData(result);
+        queryResult.setDraw(reqDraw);
+        queryResult.setRecordsTotal(Long.valueOf(result.size()));
+        queryResult.setRecordsFiltered(Long.valueOf(result.size()));
 
         return queryResult;
     }

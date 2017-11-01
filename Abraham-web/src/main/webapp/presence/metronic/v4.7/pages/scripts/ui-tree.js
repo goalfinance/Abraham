@@ -186,8 +186,8 @@ var UITree = function () {
 
             handleSample1();
             handleSample2();
-            contextualMenuSample();
-            ajaxTreeSample();
+            // contextualMenuSample();
+            // ajaxTreeSample();
 
         }
 

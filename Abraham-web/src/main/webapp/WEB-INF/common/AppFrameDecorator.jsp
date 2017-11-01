@@ -56,6 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet"
           type="text/css"/>
+    <link href="/assets/global/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL STYLES -->
     <link href="/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css"/>
@@ -75,7 +76,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </head>
 <!-- END HEAD -->
 
-<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<body class="page-header-fixed page-footer-fixed page-sidebar-closed-hide-logo page-content-white">
 <!-- BEGIN HEADER -->
 <div class="page-header navbar navbar-fixed-top">
     <!-- BEGIN HEADER INNER -->
@@ -480,6 +481,13 @@ License: You must have a valid license purchased only from themeforest(the above
                         <span class="arrow open"></span>
                     </a>
                     <ul class="sub-menu">
+                        <li class="nav-item start ">
+                            <a href="/data/security/maintain/resource/main_view" class="nav-link ">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title">系统资源管理</span>
+                            </a>
+                        </li>
+
                         <li class="nav-item start ">
                             <a href="/data/keymanager/show_main_view" class="nav-link ">
                                 <i class="icon-bar-chart"></i>
@@ -1235,8 +1243,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jstree/dist/jstree.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
-
 
 <script src="/assets/global/scripts/datatable.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>

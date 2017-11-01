@@ -24,7 +24,7 @@
                 <div class="col-md-4">
                     <div class="input-icon right">
                         <i class="fa"></i>
-                        <input type="text" class="form-control" name="userId" value="${securityUser.userId}"/>
+                        <input type="text" class="form-control" name="userId" autofocus value="${securityUser.userId}"/>
                     </div>
                 </div>
             </div>

@@ -29,14 +29,14 @@ import java.util.List;
  * @author panqingrong
  */
 @RestController
-@RequestMapping("restapis/security/maintaining")
-public class SecurityMaintainingRestController {
+@RequestMapping("restapis/security/maintaining/user")
+public class SecurityUserMaintainingRestController {
     private final Log log = LogFactory.getLog(this.getClass());
 
     @Autowired
     private WebSecurityService webSecurityService;
 
-    @RequestMapping(value = "/user/register", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8)
+    @RequestMapping(value = "register", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void registerSecurityUser(@RequestBody SecurityUserBean securityUser) throws AppBizException {
         BeanValidator.validate(securityUser);
@@ -53,14 +53,14 @@ public class SecurityMaintainingRestController {
         webSecurityService.registerSecurityUser(su);
     }
 
-    @RequestMapping(value = "/user/change_password/{sId}", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8)
+    @RequestMapping(value = "change_password/{sId}", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void changeSecurityUserPassword(@PathVariable Long sId, @RequestBody ChangePasswordBean cp) throws AppBizException {
         log.debug("Change the security user[sid'" + sId + "']'s password");
         webSecurityService.changePassword(sId, cp.getOldPassword(), cp.getNewPassword());
     }
 
-    @RequestMapping(value = "user/{sId}", method = RequestMethod.PUT, consumes = MediaTypes.JSON_UTF_8)
+    @RequestMapping(value = "{sId}", method = RequestMethod.PUT, consumes = MediaTypes.JSON_UTF_8)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateSecurityUser(@PathVariable("sId") Long sId, @RequestBody SecurityUser su) throws AppBizException {
         log.debug("Update the security user[sid='" + sId + "']");
@@ -83,7 +83,7 @@ public class SecurityMaintainingRestController {
         log.debug("Update the security user[sid='" + sId + "'] --success");
     }
 
-    @RequestMapping(value = "user/list", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8, produces = MediaTypes.JSON_UTF_8)
+    @RequestMapping(value = "list", method = RequestMethod.POST, consumes = MediaTypes.JSON_UTF_8, produces = MediaTypes.JSON_UTF_8)
     public DTQueryResultPagination<SecurityUser> listSecurityUsers(@RequestBody DTQueryPagination dtQuery) {
         DataTablesUtils<SecurityUser> dtUtils = new DataTablesUtils<SecurityUser>();
         int pageNum = dtUtils.calcPageNumber(dtQuery);

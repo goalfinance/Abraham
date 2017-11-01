@@ -23,7 +23,7 @@
                 <div class="col-md-6">
                     <div class="btn-group">
                         <button id="new_security_user" class="btn green" data-toggle="modal"
-                                data-target="#modal_add_security_user"
+                                data-target="#modal_security_user"
                                 href="/data/security/maintain/user/show_modal_form">新增用户
                             <i class="fa fa-plus"></i>
                         </button>
@@ -73,7 +73,7 @@
 </div>
 
 <!-- BEGIN modal for adding security user-->
-<div id="modal_add_security_user" class="modal fade" tabindex="-1" data-width="800">
+<div id="modal_security_user" class="modal fade">
     <div class="modal-content">
         <div class="modal-body">
             <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
