@@ -15,6 +15,8 @@ import java.io.Serializable;
 @Table(name = "t_security_resource_group")
 @Data
 public class SecurityResourceGroup implements Serializable {
+    public static final String STATUS_NORMAL = "N";
+    public static final String STATUS_CANCEL = "C";
     /**
      *
      */
@@ -32,7 +34,7 @@ public class SecurityResourceGroup implements Serializable {
     private String name;
 
     @Column(name = "status")
-    private String status;
+    private String status = STATUS_NORMAL;
 
     @Column(name = "description")
     private String description;

@@ -22,4 +22,12 @@ public interface SecurityResourceService {
 
     public List<SecurityResourceGroup> findSecurityResourceGroupByUserSid(Long userSid) throws AppBizException;
 
+    public Long addSecurityResourceGroupBefore(Long beforeGroupSid, SecurityResourceGroup newSecurityResourceGroup) throws AppBizException;
+
+    public Long addSecurityResourceGroupAfter(Long afterGroupSid, SecurityResourceGroup newSecurityResourceGroup) throws AppBizException;
+
+    public Long addSecurityResourceGroupFirst(SecurityResourceGroup securityResourceGroup) throws AppBizException;
+
+    public Long addSecurityResourceGroupLast(SecurityResourceGroup securityResourceGroup) throws AppBizException;
+
 }

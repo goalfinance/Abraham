@@ -69,11 +69,4 @@
     <button type="button" class="btn green" onclick="addSecurityUser();">确认</button>
 </div>
 
-<%
-    //设置缓存为空
-    response.setHeader("Pragma", "No-cache");
-    response.setHeader("Cache-Control", "no-cache");
-    response.setDateHeader("Expires", 0);
-%>
-
 <script type="text/javascript" src="/assets/pages/scripts/security/maintain/user/add-user-modal.js"></script>

@@ -45,17 +45,14 @@
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
-                                <a href="javascript:;"> Option 1</a>
+                                <a data-toggle='modal' data-target='#modal_resources' href="/data/security/maintain/resource/add_resource_group_modal"> Add </a>
                             </li>
                             <li class="divider"> </li>
                             <li>
-                                <a href="javascript:;">Option 2</a>
+                                <a href="javascript:;"> Delete </a>
                             </li>
                             <li>
-                                <a href="javascript:;">Option 3</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Option 4</a>
+                                <a href="javascript:;"> Edit </a>
                             </li>
                         </ul>
                     </div>
@@ -80,17 +77,14 @@
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
-                                <a href="javascript:;"> Option 1</a>
+                                <a href="javascript:;"> Add </a>
                             </li>
                             <li class="divider"> </li>
                             <li>
-                                <a href="javascript:;">Option 2</a>
+                                <a href="javascript:;"> Delete </a>
                             </li>
                             <li>
-                                <a href="javascript:;">Option 3</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Option 4</a>
+                                <a href="javascript:;"> Edit </a>
                             </li>
                         </ul>
                     </div>
@@ -112,6 +106,16 @@
 
     </div>
 </div>
+
+<div id="modal_resources" class="modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
+            <span>&nbsp;&nbsp;Loading... </span>
+        </div>
+    </div>
+</div>
+
 <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
 <script src="/assets/pages/scripts/security/maintain/resource/main-view.js" type="text/javascript"></script>

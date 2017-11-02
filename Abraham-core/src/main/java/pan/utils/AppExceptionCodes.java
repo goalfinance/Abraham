@@ -51,7 +51,12 @@ public class AppExceptionCodes {
     /**
      * The security resource does not exist in system.
      */
-    public static final String[] SEC_SECURITY_RESOURCE_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0007", "The security resource[sid={0}] does not exist in system.]"};
+    public static final String[] SEC_SECURITY_RESOURCE_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0007", "The security resource[sid={0}] does not exist in system."};
+
+    /**
+     * The security resource group does not exist in system.
+     */
+    public static final String[] SEC_SECURITY_RESOURCE_GROUP_DOES_NOT_EXIST = {"R.MAS.OUTPOST-WEB-SEC.0008", "The security resource group[sid={0}] does not exist in system."};
 
     /**
      * The name of keypair has existed in system.
