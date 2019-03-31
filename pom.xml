@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <name>Abraham</name>
-    <description>Common application frame.</description>
+    <description>Common application frame. </description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
