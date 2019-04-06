@@ -29,6 +29,7 @@ public class TestingConfig {
     }
 
     @Bean
+    @UnitTestEnv
     //You can change the credentials-logic here.
     public CredentialsService credentialsService() {
         return new HashedCredentialsService();
